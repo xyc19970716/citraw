@@ -1,0 +1,1250 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\citra\src\core\arm\dynarmic\arm_dynarmic.cpp">
+      <Filter>arm\dynarmic</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\arm\dynarmic\arm_dynarmic_cp15.cpp">
+      <Filter>arm\dynarmic</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\arm\dyncom\arm_dyncom.cpp">
+      <Filter>arm\dyncom</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\arm\dyncom\arm_dyncom_dec.cpp">
+      <Filter>arm\dyncom</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\arm\dyncom\arm_dyncom_interpreter.cpp">
+      <Filter>arm\dyncom</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\arm\dyncom\arm_dyncom_thumb.cpp">
+      <Filter>arm\dyncom</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\arm\dyncom\arm_dyncom_trans.cpp">
+      <Filter>arm\dyncom</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\arm\skyeye_common\armstate.cpp">
+      <Filter>arm\skyeye_common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\arm\skyeye_common\armsupp.cpp">
+      <Filter>arm\skyeye_common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\arm\skyeye_common\vfp\vfp.cpp">
+      <Filter>arm\skyeye_common\vfp</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\arm\skyeye_common\vfp\vfpdouble.cpp">
+      <Filter>arm\skyeye_common\vfp</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\arm\skyeye_common\vfp\vfpinstr.cpp">
+      <Filter>arm\skyeye_common\vfp</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\arm\skyeye_common\vfp\vfpsingle.cpp">
+      <Filter>arm\skyeye_common\vfp</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\core.cpp" />
+    <ClCompile Include="C:\citra\src\core\core_timing.cpp" />
+    <ClCompile Include="C:\citra\src\core\file_sys\archive_backend.cpp">
+      <Filter>file_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\file_sys\archive_extsavedata.cpp">
+      <Filter>file_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\file_sys\archive_ncch.cpp">
+      <Filter>file_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\file_sys\archive_other_savedata.cpp">
+      <Filter>file_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\file_sys\archive_savedata.cpp">
+      <Filter>file_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\file_sys\archive_sdmc.cpp">
+      <Filter>file_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\file_sys\archive_sdmcwriteonly.cpp">
+      <Filter>file_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\file_sys\archive_selfncch.cpp">
+      <Filter>file_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\file_sys\archive_source_sd_savedata.cpp">
+      <Filter>file_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\file_sys\archive_systemsavedata.cpp">
+      <Filter>file_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\file_sys\disk_archive.cpp">
+      <Filter>file_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\file_sys\ivfc_archive.cpp">
+      <Filter>file_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\file_sys\path_parser.cpp">
+      <Filter>file_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\file_sys\savedata_archive.cpp">
+      <Filter>file_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\frontend\camera\blank_camera.cpp">
+      <Filter>frontend\camera</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\frontend\camera\factory.cpp">
+      <Filter>frontend\camera</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\frontend\camera\interface.cpp">
+      <Filter>frontend\camera</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\frontend\emu_window.cpp">
+      <Filter>frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\frontend\framebuffer_layout.cpp">
+      <Filter>frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\frontend\motion_emu.cpp">
+      <Filter>frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\gdbstub\gdbstub.cpp">
+      <Filter>gdbstub</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\config_mem.cpp">
+      <Filter>hle</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\applets\applet.cpp">
+      <Filter>hle\applets</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\applets\erreula.cpp">
+      <Filter>hle\applets</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\applets\mii_selector.cpp">
+      <Filter>hle\applets</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\applets\mint.cpp">
+      <Filter>hle\applets</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\applets\swkbd.cpp">
+      <Filter>hle\applets</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\kernel\address_arbiter.cpp">
+      <Filter>hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\kernel\client_port.cpp">
+      <Filter>hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\kernel\client_session.cpp">
+      <Filter>hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\kernel\event.cpp">
+      <Filter>hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\kernel\handle_table.cpp">
+      <Filter>hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\kernel\hle_ipc.cpp">
+      <Filter>hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\kernel\kernel.cpp">
+      <Filter>hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\kernel\memory.cpp">
+      <Filter>hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\kernel\mutex.cpp">
+      <Filter>hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\kernel\process.cpp">
+      <Filter>hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\kernel\resource_limit.cpp">
+      <Filter>hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\kernel\semaphore.cpp">
+      <Filter>hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\kernel\server_port.cpp">
+      <Filter>hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\kernel\server_session.cpp">
+      <Filter>hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\kernel\shared_memory.cpp">
+      <Filter>hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\kernel\thread.cpp">
+      <Filter>hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\kernel\timer.cpp">
+      <Filter>hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\kernel\vm_manager.cpp">
+      <Filter>hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\kernel\wait_object.cpp">
+      <Filter>hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\ac\ac.cpp">
+      <Filter>hle\service\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\ac\ac_i.cpp">
+      <Filter>hle\service\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\ac\ac_u.cpp">
+      <Filter>hle\service\ac</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\act\act.cpp">
+      <Filter>hle\service\act</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\act\act_a.cpp">
+      <Filter>hle\service\act</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\act\act_u.cpp">
+      <Filter>hle\service\act</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\am\am.cpp">
+      <Filter>hle\service\am</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\am\am_app.cpp">
+      <Filter>hle\service\am</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\am\am_net.cpp">
+      <Filter>hle\service\am</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\am\am_sys.cpp">
+      <Filter>hle\service\am</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\am\am_u.cpp">
+      <Filter>hle\service\am</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\apt\apt.cpp">
+      <Filter>hle\service\apt</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\apt\apt_a.cpp">
+      <Filter>hle\service\apt</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\apt\apt_s.cpp">
+      <Filter>hle\service\apt</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\apt\apt_u.cpp">
+      <Filter>hle\service\apt</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\apt\bcfnt\bcfnt.cpp">
+      <Filter>hle\service\apt\bcfnt</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\boss\boss.cpp">
+      <Filter>hle\service\boss</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\boss\boss_p.cpp">
+      <Filter>hle\service\boss</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\boss\boss_u.cpp">
+      <Filter>hle\service\boss</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\cam\cam.cpp">
+      <Filter>hle\service\cam</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\cam\cam_c.cpp">
+      <Filter>hle\service\cam</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\cam\cam_q.cpp">
+      <Filter>hle\service\cam</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\cam\cam_s.cpp">
+      <Filter>hle\service\cam</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\cam\cam_u.cpp">
+      <Filter>hle\service\cam</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\cecd\cecd.cpp">
+      <Filter>hle\service\cecd</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\cecd\cecd_ndm.cpp">
+      <Filter>hle\service\cecd</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\cecd\cecd_s.cpp">
+      <Filter>hle\service\cecd</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\cecd\cecd_u.cpp">
+      <Filter>hle\service\cecd</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\cfg\cfg.cpp">
+      <Filter>hle\service\cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\cfg\cfg_i.cpp">
+      <Filter>hle\service\cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\cfg\cfg_nor.cpp">
+      <Filter>hle\service\cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\cfg\cfg_s.cpp">
+      <Filter>hle\service\cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\cfg\cfg_u.cpp">
+      <Filter>hle\service\cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\csnd_snd.cpp">
+      <Filter>hle\service</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\dlp\dlp.cpp">
+      <Filter>hle\service\dlp</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\dlp\dlp_clnt.cpp">
+      <Filter>hle\service\dlp</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\dlp\dlp_fkcl.cpp">
+      <Filter>hle\service\dlp</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\dlp\dlp_srvr.cpp">
+      <Filter>hle\service\dlp</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\dsp_dsp.cpp">
+      <Filter>hle\service</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\err_f.cpp">
+      <Filter>hle\service</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\frd\frd.cpp">
+      <Filter>hle\service\frd</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\frd\frd_a.cpp">
+      <Filter>hle\service\frd</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\frd\frd_u.cpp">
+      <Filter>hle\service\frd</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\fs\archive.cpp">
+      <Filter>hle\service\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\fs\fs_user.cpp">
+      <Filter>hle\service\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\gsp_gpu.cpp">
+      <Filter>hle\service</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\gsp_lcd.cpp">
+      <Filter>hle\service</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\hid\hid.cpp">
+      <Filter>hle\service\hid</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\hid\hid_spvr.cpp">
+      <Filter>hle\service\hid</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\hid\hid_user.cpp">
+      <Filter>hle\service\hid</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\http_c.cpp">
+      <Filter>hle\service</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\ir\extra_hid.cpp">
+      <Filter>hle\service\ir</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\ir\ir.cpp">
+      <Filter>hle\service\ir</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\ir\ir_rst.cpp">
+      <Filter>hle\service\ir</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\ir\ir_u.cpp">
+      <Filter>hle\service\ir</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\ir\ir_user.cpp">
+      <Filter>hle\service\ir</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\ldr_ro\cro_helper.cpp">
+      <Filter>hle\service\ldr_ro</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\ldr_ro\ldr_ro.cpp">
+      <Filter>hle\service\ldr_ro</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\ldr_ro\memory_synchronizer.cpp">
+      <Filter>hle\service\ldr_ro</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\mic_u.cpp">
+      <Filter>hle\service</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\mvd\mvd.cpp">
+      <Filter>hle\service\mvd</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\mvd\mvd_std.cpp">
+      <Filter>hle\service\mvd</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\ndm\ndm.cpp">
+      <Filter>hle\service\ndm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\ndm\ndm_u.cpp">
+      <Filter>hle\service\ndm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\nfc\nfc.cpp">
+      <Filter>hle\service\nfc</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\nfc\nfc_m.cpp">
+      <Filter>hle\service\nfc</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\nfc\nfc_u.cpp">
+      <Filter>hle\service\nfc</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\news\news.cpp">
+      <Filter>hle\service\news</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\news\news_s.cpp">
+      <Filter>hle\service\news</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\news\news_u.cpp">
+      <Filter>hle\service\news</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\nim\nim.cpp">
+      <Filter>hle\service\nim</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\nim\nim_aoc.cpp">
+      <Filter>hle\service\nim</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\nim\nim_s.cpp">
+      <Filter>hle\service\nim</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\nim\nim_u.cpp">
+      <Filter>hle\service\nim</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\ns_s.cpp">
+      <Filter>hle\service</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\nwm\nwm.cpp">
+      <Filter>hle\service\nwm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\nwm\nwm_cec.cpp">
+      <Filter>hle\service\nwm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\nwm\nwm_ext.cpp">
+      <Filter>hle\service\nwm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\nwm\nwm_inf.cpp">
+      <Filter>hle\service\nwm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\nwm\nwm_sap.cpp">
+      <Filter>hle\service\nwm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\nwm\nwm_soc.cpp">
+      <Filter>hle\service\nwm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\nwm\nwm_tst.cpp">
+      <Filter>hle\service\nwm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\nwm\nwm_uds.cpp">
+      <Filter>hle\service\nwm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\nwm\uds_beacon.cpp">
+      <Filter>hle\service\nwm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\nwm\uds_data.cpp">
+      <Filter>hle\service\nwm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\pm_app.cpp">
+      <Filter>hle\service</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\ptm\ptm.cpp">
+      <Filter>hle\service\ptm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\ptm\ptm_gets.cpp">
+      <Filter>hle\service\ptm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\ptm\ptm_play.cpp">
+      <Filter>hle\service\ptm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\ptm\ptm_sets.cpp">
+      <Filter>hle\service\ptm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\ptm\ptm_sysm.cpp">
+      <Filter>hle\service\ptm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\ptm\ptm_u.cpp">
+      <Filter>hle\service\ptm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\qtm\qtm.cpp">
+      <Filter>hle\service\qtm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\qtm\qtm_s.cpp">
+      <Filter>hle\service\qtm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\qtm\qtm_sp.cpp">
+      <Filter>hle\service\qtm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\qtm\qtm_u.cpp">
+      <Filter>hle\service\qtm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\service.cpp">
+      <Filter>hle\service</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\sm\sm.cpp">
+      <Filter>hle\service\sm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\sm\srv.cpp">
+      <Filter>hle\service\sm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\soc_u.cpp">
+      <Filter>hle\service</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\ssl_c.cpp">
+      <Filter>hle\service</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\service\y2r_u.cpp">
+      <Filter>hle\service</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\shared_page.cpp">
+      <Filter>hle</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\svc.cpp">
+      <Filter>hle</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hw\aes\arithmetic128.cpp">
+      <Filter>hw\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hw\aes\ccm.cpp">
+      <Filter>hw\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hw\aes\key.cpp">
+      <Filter>hw\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hw\gpu.cpp">
+      <Filter>hw</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hw\hw.cpp">
+      <Filter>hw</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hw\lcd.cpp">
+      <Filter>hw</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hw\y2r.cpp">
+      <Filter>hw</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\loader\3dsx.cpp">
+      <Filter>loader</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\loader\elf.cpp">
+      <Filter>loader</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\loader\loader.cpp">
+      <Filter>loader</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\loader\ncch.cpp">
+      <Filter>loader</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\loader\smdh.cpp">
+      <Filter>loader</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\tracer\recorder.cpp">
+      <Filter>tracer</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\memory.cpp" />
+    <ClCompile Include="C:\citra\src\core\perf_stats.cpp" />
+    <ClCompile Include="C:\citra\src\core\settings.cpp" />
+    <ClCompile Include="C:\citra\src\core\telemetry_session.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\citra\src\core\3ds.h" />
+    <ClInclude Include="C:\citra\src\core\arm\arm_interface.h">
+      <Filter>arm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\arm\dynarmic\arm_dynarmic.h">
+      <Filter>arm\dynarmic</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\arm\dynarmic\arm_dynarmic_cp15.h">
+      <Filter>arm\dynarmic</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\arm\dyncom\arm_dyncom.h">
+      <Filter>arm\dyncom</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\arm\dyncom\arm_dyncom_dec.h">
+      <Filter>arm\dyncom</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\arm\dyncom\arm_dyncom_interpreter.h">
+      <Filter>arm\dyncom</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\arm\dyncom\arm_dyncom_run.h">
+      <Filter>arm\dyncom</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\arm\dyncom\arm_dyncom_thumb.h">
+      <Filter>arm\dyncom</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\arm\dyncom\arm_dyncom_trans.h">
+      <Filter>arm\dyncom</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\arm\skyeye_common\arm_regformat.h">
+      <Filter>arm\skyeye_common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\arm\skyeye_common\armstate.h">
+      <Filter>arm\skyeye_common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\arm\skyeye_common\armsupp.h">
+      <Filter>arm\skyeye_common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\arm\skyeye_common\vfp\asm_vfp.h">
+      <Filter>arm\skyeye_common\vfp</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\arm\skyeye_common\vfp\vfp.h">
+      <Filter>arm\skyeye_common\vfp</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\arm\skyeye_common\vfp\vfp_helper.h">
+      <Filter>arm\skyeye_common\vfp</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\core.h" />
+    <ClInclude Include="C:\citra\src\core\core_timing.h" />
+    <ClInclude Include="C:\citra\src\core\file_sys\archive_backend.h">
+      <Filter>file_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\file_sys\archive_extsavedata.h">
+      <Filter>file_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\file_sys\archive_ncch.h">
+      <Filter>file_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\file_sys\archive_other_savedata.h">
+      <Filter>file_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\file_sys\archive_savedata.h">
+      <Filter>file_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\file_sys\archive_sdmc.h">
+      <Filter>file_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\file_sys\archive_sdmcwriteonly.h">
+      <Filter>file_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\file_sys\archive_selfncch.h">
+      <Filter>file_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\file_sys\archive_source_sd_savedata.h">
+      <Filter>file_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\file_sys\archive_systemsavedata.h">
+      <Filter>file_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\file_sys\directory_backend.h">
+      <Filter>file_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\file_sys\disk_archive.h">
+      <Filter>file_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\file_sys\errors.h">
+      <Filter>file_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\file_sys\file_backend.h">
+      <Filter>file_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\file_sys\ivfc_archive.h">
+      <Filter>file_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\file_sys\path_parser.h">
+      <Filter>file_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\file_sys\savedata_archive.h">
+      <Filter>file_sys</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\frontend\camera\blank_camera.h">
+      <Filter>frontend\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\frontend\camera\factory.h">
+      <Filter>frontend\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\frontend\camera\interface.h">
+      <Filter>frontend\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\frontend\emu_window.h">
+      <Filter>frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\frontend\framebuffer_layout.h">
+      <Filter>frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\frontend\input.h">
+      <Filter>frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\frontend\motion_emu.h">
+      <Filter>frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\gdbstub\gdbstub.h">
+      <Filter>gdbstub</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\config_mem.h">
+      <Filter>hle</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\function_wrappers.h">
+      <Filter>hle</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\ipc.h">
+      <Filter>hle</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\ipc_helpers.h">
+      <Filter>hle</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\applets\applet.h">
+      <Filter>hle\applets</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\applets\erreula.h">
+      <Filter>hle\applets</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\applets\mii_selector.h">
+      <Filter>hle\applets</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\applets\mint.h">
+      <Filter>hle\applets</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\applets\swkbd.h">
+      <Filter>hle\applets</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\kernel\address_arbiter.h">
+      <Filter>hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\kernel\client_port.h">
+      <Filter>hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\kernel\client_session.h">
+      <Filter>hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\kernel\errors.h">
+      <Filter>hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\kernel\event.h">
+      <Filter>hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\kernel\handle_table.h">
+      <Filter>hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\kernel\hle_ipc.h">
+      <Filter>hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\kernel\kernel.h">
+      <Filter>hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\kernel\memory.h">
+      <Filter>hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\kernel\mutex.h">
+      <Filter>hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\kernel\process.h">
+      <Filter>hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\kernel\resource_limit.h">
+      <Filter>hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\kernel\semaphore.h">
+      <Filter>hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\kernel\server_port.h">
+      <Filter>hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\kernel\server_session.h">
+      <Filter>hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\kernel\session.h">
+      <Filter>hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\kernel\shared_memory.h">
+      <Filter>hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\kernel\thread.h">
+      <Filter>hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\kernel\timer.h">
+      <Filter>hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\kernel\vm_manager.h">
+      <Filter>hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\kernel\wait_object.h">
+      <Filter>hle\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\result.h">
+      <Filter>hle</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\ac\ac.h">
+      <Filter>hle\service\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\ac\ac_i.h">
+      <Filter>hle\service\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\ac\ac_u.h">
+      <Filter>hle\service\ac</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\act\act.h">
+      <Filter>hle\service\act</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\act\act_a.h">
+      <Filter>hle\service\act</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\act\act_u.h">
+      <Filter>hle\service\act</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\am\am.h">
+      <Filter>hle\service\am</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\am\am_app.h">
+      <Filter>hle\service\am</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\am\am_net.h">
+      <Filter>hle\service\am</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\am\am_sys.h">
+      <Filter>hle\service\am</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\am\am_u.h">
+      <Filter>hle\service\am</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\apt\apt.h">
+      <Filter>hle\service\apt</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\apt\apt_a.h">
+      <Filter>hle\service\apt</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\apt\apt_s.h">
+      <Filter>hle\service\apt</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\apt\apt_u.h">
+      <Filter>hle\service\apt</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\apt\bcfnt\bcfnt.h">
+      <Filter>hle\service\apt\bcfnt</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\boss\boss.h">
+      <Filter>hle\service\boss</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\boss\boss_p.h">
+      <Filter>hle\service\boss</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\boss\boss_u.h">
+      <Filter>hle\service\boss</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\cam\cam.h">
+      <Filter>hle\service\cam</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\cam\cam_c.h">
+      <Filter>hle\service\cam</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\cam\cam_q.h">
+      <Filter>hle\service\cam</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\cam\cam_s.h">
+      <Filter>hle\service\cam</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\cam\cam_u.h">
+      <Filter>hle\service\cam</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\cecd\cecd.h">
+      <Filter>hle\service\cecd</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\cecd\cecd_ndm.h">
+      <Filter>hle\service\cecd</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\cecd\cecd_s.h">
+      <Filter>hle\service\cecd</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\cecd\cecd_u.h">
+      <Filter>hle\service\cecd</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\cfg\cfg.h">
+      <Filter>hle\service\cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\cfg\cfg_i.h">
+      <Filter>hle\service\cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\cfg\cfg_nor.h">
+      <Filter>hle\service\cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\cfg\cfg_s.h">
+      <Filter>hle\service\cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\cfg\cfg_u.h">
+      <Filter>hle\service\cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\csnd_snd.h">
+      <Filter>hle\service</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\dlp\dlp.h">
+      <Filter>hle\service\dlp</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\dlp\dlp_clnt.h">
+      <Filter>hle\service\dlp</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\dlp\dlp_fkcl.h">
+      <Filter>hle\service\dlp</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\dlp\dlp_srvr.h">
+      <Filter>hle\service\dlp</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\dsp_dsp.h">
+      <Filter>hle\service</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\err_f.h">
+      <Filter>hle\service</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\frd\frd.h">
+      <Filter>hle\service\frd</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\frd\frd_a.h">
+      <Filter>hle\service\frd</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\frd\frd_u.h">
+      <Filter>hle\service\frd</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\fs\archive.h">
+      <Filter>hle\service\fs</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\fs\fs_user.h">
+      <Filter>hle\service\fs</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\gsp_gpu.h">
+      <Filter>hle\service</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\gsp_lcd.h">
+      <Filter>hle\service</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\hid\hid.h">
+      <Filter>hle\service\hid</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\hid\hid_spvr.h">
+      <Filter>hle\service\hid</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\hid\hid_user.h">
+      <Filter>hle\service\hid</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\http_c.h">
+      <Filter>hle\service</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\ir\extra_hid.h">
+      <Filter>hle\service\ir</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\ir\ir.h">
+      <Filter>hle\service\ir</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\ir\ir_rst.h">
+      <Filter>hle\service\ir</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\ir\ir_u.h">
+      <Filter>hle\service\ir</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\ir\ir_user.h">
+      <Filter>hle\service\ir</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\ldr_ro\cro_helper.h">
+      <Filter>hle\service\ldr_ro</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\ldr_ro\ldr_ro.h">
+      <Filter>hle\service\ldr_ro</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\ldr_ro\memory_synchronizer.h">
+      <Filter>hle\service\ldr_ro</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\mic_u.h">
+      <Filter>hle\service</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\mvd\mvd.h">
+      <Filter>hle\service\mvd</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\mvd\mvd_std.h">
+      <Filter>hle\service\mvd</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\ndm\ndm.h">
+      <Filter>hle\service\ndm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\ndm\ndm_u.h">
+      <Filter>hle\service\ndm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\nfc\nfc.h">
+      <Filter>hle\service\nfc</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\nfc\nfc_m.h">
+      <Filter>hle\service\nfc</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\nfc\nfc_u.h">
+      <Filter>hle\service\nfc</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\news\news.h">
+      <Filter>hle\service\news</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\news\news_s.h">
+      <Filter>hle\service\news</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\news\news_u.h">
+      <Filter>hle\service\news</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\nim\nim.h">
+      <Filter>hle\service\nim</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\nim\nim_aoc.h">
+      <Filter>hle\service\nim</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\nim\nim_s.h">
+      <Filter>hle\service\nim</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\nim\nim_u.h">
+      <Filter>hle\service\nim</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\ns_s.h">
+      <Filter>hle\service</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\nwm\nwm.h">
+      <Filter>hle\service\nwm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\nwm\nwm_cec.h">
+      <Filter>hle\service\nwm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\nwm\nwm_ext.h">
+      <Filter>hle\service\nwm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\nwm\nwm_inf.h">
+      <Filter>hle\service\nwm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\nwm\nwm_sap.h">
+      <Filter>hle\service\nwm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\nwm\nwm_soc.h">
+      <Filter>hle\service\nwm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\nwm\nwm_tst.h">
+      <Filter>hle\service\nwm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\nwm\nwm_uds.h">
+      <Filter>hle\service\nwm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\nwm\uds_beacon.h">
+      <Filter>hle\service\nwm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\nwm\uds_data.h">
+      <Filter>hle\service\nwm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\pm_app.h">
+      <Filter>hle\service</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\ptm\ptm.h">
+      <Filter>hle\service\ptm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\ptm\ptm_gets.h">
+      <Filter>hle\service\ptm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\ptm\ptm_play.h">
+      <Filter>hle\service\ptm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\ptm\ptm_sets.h">
+      <Filter>hle\service\ptm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\ptm\ptm_sysm.h">
+      <Filter>hle\service\ptm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\ptm\ptm_u.h">
+      <Filter>hle\service\ptm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\qtm\qtm.h">
+      <Filter>hle\service\qtm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\qtm\qtm_s.h">
+      <Filter>hle\service\qtm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\qtm\qtm_sp.h">
+      <Filter>hle\service\qtm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\qtm\qtm_u.h">
+      <Filter>hle\service\qtm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\service.h">
+      <Filter>hle\service</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\sm\sm.h">
+      <Filter>hle\service\sm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\sm\srv.h">
+      <Filter>hle\service\sm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\soc_u.h">
+      <Filter>hle\service</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\ssl_c.h">
+      <Filter>hle\service</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\service\y2r_u.h">
+      <Filter>hle\service</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\shared_page.h">
+      <Filter>hle</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hle\svc.h">
+      <Filter>hle</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hw\aes\arithmetic128.h">
+      <Filter>hw\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hw\aes\ccm.h">
+      <Filter>hw\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hw\aes\key.h">
+      <Filter>hw\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hw\gpu.h">
+      <Filter>hw</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hw\hw.h">
+      <Filter>hw</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hw\lcd.h">
+      <Filter>hw</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\hw\y2r.h">
+      <Filter>hw</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\loader\3dsx.h">
+      <Filter>loader</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\loader\elf.h">
+      <Filter>loader</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\loader\loader.h">
+      <Filter>loader</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\loader\ncch.h">
+      <Filter>loader</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\loader\smdh.h">
+      <Filter>loader</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\tracer\recorder.h">
+      <Filter>tracer</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\tracer\citrace.h">
+      <Filter>tracer</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\core\memory.h" />
+    <ClInclude Include="C:\citra\src\core\memory_setup.h" />
+    <ClInclude Include="C:\citra\src\core\mmio.h" />
+    <ClInclude Include="C:\citra\src\core\perf_stats.h" />
+    <ClInclude Include="C:\citra\src\core\settings.h" />
+    <ClInclude Include="C:\citra\src\core\telemetry_session.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\src\core\CMakeLists.txt">
+      <Filter>Other Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="hle\service\ac">
+      <UniqueIdentifier>{1A12C599-379C-3D69-B2CF-896CAC9A7B5C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\service\act">
+      <UniqueIdentifier>{7184B1E9-F450-3E8B-9351-0D9402DF323C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\service\am">
+      <UniqueIdentifier>{A36C5293-6D21-342C-873A-542AC350A8D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\service\apt">
+      <UniqueIdentifier>{A68A4B14-1458-3249-A8D6-3E8BDC7449F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\service\boss">
+      <UniqueIdentifier>{64B23DE4-DE6F-3BFC-AEB6-05C01C81B599}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\service\cam">
+      <UniqueIdentifier>{1DED796F-EFA5-3913-92C5-E777BF5D938C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\service\cecd">
+      <UniqueIdentifier>{D1DBCB24-E14E-34A1-A5AB-C4B4BBF72B05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\service\cfg">
+      <UniqueIdentifier>{FDA4838E-ADA8-3BEA-963E-694CF2A09257}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\service\dlp">
+      <UniqueIdentifier>{76FB05D6-4E29-30E4-AFE9-3B9593D19532}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\service\frd">
+      <UniqueIdentifier>{5169E02C-A263-31FC-9C0D-A3DCF7D4A426}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\service\fs">
+      <UniqueIdentifier>{1946ED54-5C1C-3203-BC6A-612198EB0948}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\service\hid">
+      <UniqueIdentifier>{7CE9D9F4-9B0D-3021-9C92-791884E10FE4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\service\ir">
+      <UniqueIdentifier>{4C0FA010-CB90-3E55-8E51-A108ABD8230B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\service\ldr_ro">
+      <UniqueIdentifier>{42186CF5-35C1-35D7-86FE-F31D663C50AB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\service\mvd">
+      <UniqueIdentifier>{22652B6A-293D-3C60-97EE-C4F22894200E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\service\ndm">
+      <UniqueIdentifier>{64FD8CEB-B8C3-33C3-B010-8674A0307217}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\service\nfc">
+      <UniqueIdentifier>{0C439F55-3DD6-36C7-9CF1-73FEBE127643}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\service\news">
+      <UniqueIdentifier>{114732E1-D0C8-33E6-B801-1A831825A8A3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\service\nim">
+      <UniqueIdentifier>{92F02F3C-B619-3913-AFB3-AA5F38376AE3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\service\nwm">
+      <UniqueIdentifier>{BE7E3B19-D79A-3E19-9126-AF979508508E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\service\ptm">
+      <UniqueIdentifier>{B9F583F7-78E6-3C4F-AC8C-ADFA62F351AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\service\qtm">
+      <UniqueIdentifier>{0686048D-6207-3B04-B045-BCFA1C5141DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\service\sm">
+      <UniqueIdentifier>{C3DA53B0-F84F-3365-84AC-77C22856BF78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arm\skyeye_common\vfp">
+      <UniqueIdentifier>{AD94B128-07F6-3527-8E1D-A7748E524431}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\service\apt\bcfnt">
+      <UniqueIdentifier>{8DE3C218-DF90-36F2-A57B-58EB99FCD588}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hw\aes">
+      <UniqueIdentifier>{298ADCCB-7A0B-3707-8750-727255BA5AB5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="frontend\camera">
+      <UniqueIdentifier>{46F9932D-DBA1-3BAC-ACAB-CBD59EDBC6CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\applets">
+      <UniqueIdentifier>{EA643787-128D-38BA-B7B7-E61831749D89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\kernel">
+      <UniqueIdentifier>{0281E35B-2938-3D6C-83B3-C7EFEE47EC6B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle\service">
+      <UniqueIdentifier>{1B135843-7D5A-3511-A675-1689733F244E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arm\dynarmic">
+      <UniqueIdentifier>{D273D3AD-07F1-34C5-87D3-3ECB2B0B8A50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arm\dyncom">
+      <UniqueIdentifier>{B4B6A7C1-D66E-3D28-B404-51F5265A67E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arm\skyeye_common">
+      <UniqueIdentifier>{B2313C22-5979-3D68-9F38-EB2062432B01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Other Files">
+      <UniqueIdentifier>{66AF7118-DDE2-31CE-A021-3D952A98F1CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arm">
+      <UniqueIdentifier>{81EEF9B5-29B2-3E97-851E-2CEE3EC42655}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="file_sys">
+      <UniqueIdentifier>{920B0E28-97FA-3EAE-A1BB-E9387891AE11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="frontend">
+      <UniqueIdentifier>{0594B315-9E2B-370D-8196-2B4B67D22DA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gdbstub">
+      <UniqueIdentifier>{A699AA76-E2AC-321D-ACCA-4AAD4EACBF8D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hle">
+      <UniqueIdentifier>{A53A5B21-0109-3754-99B5-1CF51DC672DF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hw">
+      <UniqueIdentifier>{36BE5709-D453-3E29-865D-9F605B070027}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="loader">
+      <UniqueIdentifier>{9EA85C5A-EE4C-3499-ABEF-EE107E2E1B61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tracer">
+      <UniqueIdentifier>{93B57EDC-47BE-3CF8-AF92-0E6E61022274}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

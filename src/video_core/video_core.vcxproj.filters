@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\citra\src\video_core\command_processor.cpp" />
+    <ClCompile Include="C:\citra\src\video_core\debug_utils\debug_utils.cpp">
+      <Filter>debug_utils</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\video_core\pica.cpp" />
+    <ClCompile Include="C:\citra\src\video_core\primitive_assembly.cpp" />
+    <ClCompile Include="C:\citra\src\video_core\regs.cpp" />
+    <ClCompile Include="C:\citra\src\video_core\renderer_base.cpp" />
+    <ClCompile Include="C:\citra\src\video_core\renderer_opengl\gl_rasterizer.cpp">
+      <Filter>renderer_opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\video_core\renderer_opengl\gl_rasterizer_cache.cpp">
+      <Filter>renderer_opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\video_core\renderer_opengl\gl_shader_gen.cpp">
+      <Filter>renderer_opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\video_core\renderer_opengl\gl_shader_util.cpp">
+      <Filter>renderer_opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\video_core\renderer_opengl\gl_state.cpp">
+      <Filter>renderer_opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\video_core\renderer_opengl\renderer_opengl.cpp">
+      <Filter>renderer_opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\video_core\shader\shader.cpp">
+      <Filter>shader</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\video_core\shader\shader_interpreter.cpp">
+      <Filter>shader</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\video_core\swrasterizer\clipper.cpp">
+      <Filter>swrasterizer</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\video_core\swrasterizer\framebuffer.cpp">
+      <Filter>swrasterizer</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\video_core\swrasterizer\proctex.cpp">
+      <Filter>swrasterizer</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\video_core\swrasterizer\rasterizer.cpp">
+      <Filter>swrasterizer</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\video_core\swrasterizer\swrasterizer.cpp">
+      <Filter>swrasterizer</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\video_core\swrasterizer\texturing.cpp">
+      <Filter>swrasterizer</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\video_core\texture\etc1.cpp">
+      <Filter>texture</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\video_core\texture\texture_decode.cpp">
+      <Filter>texture</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\video_core\vertex_loader.cpp" />
+    <ClCompile Include="C:\citra\src\video_core\video_core.cpp" />
+    <ClCompile Include="C:\citra\src\video_core\shader\shader_jit_x64.cpp">
+      <Filter>shader</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\video_core\shader\shader_jit_x64_compiler.cpp">
+      <Filter>shader</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\citra\src\video_core\command_processor.h" />
+    <ClInclude Include="C:\citra\src\video_core\debug_utils\debug_utils.h">
+      <Filter>debug_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\video_core\gpu_debugger.h" />
+    <ClInclude Include="C:\citra\src\video_core\pica.h" />
+    <ClInclude Include="C:\citra\src\video_core\pica_state.h" />
+    <ClInclude Include="C:\citra\src\video_core\pica_types.h" />
+    <ClInclude Include="C:\citra\src\video_core\primitive_assembly.h" />
+    <ClInclude Include="C:\citra\src\video_core\rasterizer_interface.h" />
+    <ClInclude Include="C:\citra\src\video_core\regs.h" />
+    <ClInclude Include="C:\citra\src\video_core\regs_framebuffer.h" />
+    <ClInclude Include="C:\citra\src\video_core\regs_lighting.h" />
+    <ClInclude Include="C:\citra\src\video_core\regs_pipeline.h" />
+    <ClInclude Include="C:\citra\src\video_core\regs_rasterizer.h" />
+    <ClInclude Include="C:\citra\src\video_core\regs_shader.h" />
+    <ClInclude Include="C:\citra\src\video_core\regs_texturing.h" />
+    <ClInclude Include="C:\citra\src\video_core\renderer_base.h" />
+    <ClInclude Include="C:\citra\src\video_core\renderer_opengl\gl_rasterizer.h">
+      <Filter>renderer_opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\video_core\renderer_opengl\gl_rasterizer_cache.h">
+      <Filter>renderer_opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\video_core\renderer_opengl\gl_resource_manager.h">
+      <Filter>renderer_opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\video_core\renderer_opengl\gl_shader_gen.h">
+      <Filter>renderer_opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\video_core\renderer_opengl\gl_shader_util.h">
+      <Filter>renderer_opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\video_core\renderer_opengl\gl_state.h">
+      <Filter>renderer_opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\video_core\renderer_opengl\pica_to_gl.h">
+      <Filter>renderer_opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\video_core\renderer_opengl\renderer_opengl.h">
+      <Filter>renderer_opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\video_core\shader\debug_data.h">
+      <Filter>shader</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\video_core\shader\shader.h">
+      <Filter>shader</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\video_core\shader\shader_interpreter.h">
+      <Filter>shader</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\video_core\swrasterizer\clipper.h">
+      <Filter>swrasterizer</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\video_core\swrasterizer\framebuffer.h">
+      <Filter>swrasterizer</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\video_core\swrasterizer\proctex.h">
+      <Filter>swrasterizer</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\video_core\swrasterizer\rasterizer.h">
+      <Filter>swrasterizer</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\video_core\swrasterizer\swrasterizer.h">
+      <Filter>swrasterizer</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\video_core\swrasterizer\texturing.h">
+      <Filter>swrasterizer</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\video_core\texture\etc1.h">
+      <Filter>texture</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\video_core\texture\texture_decode.h">
+      <Filter>texture</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\video_core\utils.h" />
+    <ClInclude Include="C:\citra\src\video_core\vertex_loader.h" />
+    <ClInclude Include="C:\citra\src\video_core\video_core.h" />
+    <ClInclude Include="C:\citra\src\video_core\shader\shader_jit_x64.h">
+      <Filter>shader</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\video_core\shader\shader_jit_x64_compiler.h">
+      <Filter>shader</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\src\video_core\CMakeLists.txt">
+      <Filter>Other Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Other Files">
+      <UniqueIdentifier>{66AF7118-DDE2-31CE-A021-3D952A98F1CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="debug_utils">
+      <UniqueIdentifier>{D3105CFC-9B65-3E31-9375-A716ABCABF48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="renderer_opengl">
+      <UniqueIdentifier>{19C9267A-FB46-343F-B7FD-70F76BA60A33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shader">
+      <UniqueIdentifier>{D822DB2D-7642-3B6F-BD8E-7E68DAB9EA0B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="swrasterizer">
+      <UniqueIdentifier>{77FCA2B2-F5F4-3330-A104-72F745E105AF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="texture">
+      <UniqueIdentifier>{7286999E-B702-3C93-8CD7-E10DAF640F4F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

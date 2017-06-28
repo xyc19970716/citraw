@@ -1,0 +1,35 @@
+# Directories and files
+set(AM_CMAKE_BINARY_DIR "C:/citraw/")
+set(AM_CMAKE_SOURCE_DIR "C:/citra/")
+set(AM_CMAKE_CURRENT_SOURCE_DIR "C:/citra/src/citra_qt/")
+set(AM_CMAKE_CURRENT_BINARY_DIR "C:/citraw/src/citra_qt/")
+set(AM_CMAKE_INCLUDE_DIRECTORIES_PROJECT_BEFORE "")
+set(AM_BUILD_DIR "C:/citraw/src/citra_qt/citra-qt_autogen")
+set(AM_SOURCES "C:/citra/src/citra_qt/configuration/config.cpp;C:/citra/src/citra_qt/configuration/configure_audio.cpp;C:/citra/src/citra_qt/configuration/configure_debug.cpp;C:/citra/src/citra_qt/configuration/configure_dialog.cpp;C:/citra/src/citra_qt/configuration/configure_general.cpp;C:/citra/src/citra_qt/configuration/configure_graphics.cpp;C:/citra/src/citra_qt/configuration/configure_input.cpp;C:/citra/src/citra_qt/configuration/configure_system.cpp;C:/citra/src/citra_qt/debugger/graphics/graphics.cpp;C:/citra/src/citra_qt/debugger/graphics/graphics_breakpoint_observer.cpp;C:/citra/src/citra_qt/debugger/graphics/graphics_breakpoints.cpp;C:/citra/src/citra_qt/debugger/graphics/graphics_cmdlists.cpp;C:/citra/src/citra_qt/debugger/graphics/graphics_surface.cpp;C:/citra/src/citra_qt/debugger/graphics/graphics_tracing.cpp;C:/citra/src/citra_qt/debugger/graphics/graphics_vertex_shader.cpp;C:/citra/src/citra_qt/debugger/profiler.cpp;C:/citra/src/citra_qt/debugger/registers.cpp;C:/citra/src/citra_qt/debugger/wait_tree.cpp;C:/citra/src/citra_qt/util/spinbox.cpp;C:/citra/src/citra_qt/util/util.cpp;C:/citra/src/citra_qt/bootmanager.cpp;C:/citra/src/citra_qt/game_list.cpp;C:/citra/src/citra_qt/hotkeys.cpp;C:/citra/src/citra_qt/main.cpp;C:/citra/src/citra_qt/ui_settings.cpp")
+set(AM_HEADERS "C:/citra/src/citra_qt/configuration/config.h;C:/citra/src/citra_qt/configuration/configure_audio.h;C:/citra/src/citra_qt/configuration/configure_debug.h;C:/citra/src/citra_qt/configuration/configure_dialog.h;C:/citra/src/citra_qt/configuration/configure_general.h;C:/citra/src/citra_qt/configuration/configure_graphics.h;C:/citra/src/citra_qt/configuration/configure_input.h;C:/citra/src/citra_qt/configuration/configure_system.h;C:/citra/src/citra_qt/debugger/graphics/graphics.h;C:/citra/src/citra_qt/debugger/graphics/graphics_breakpoint_observer.h;C:/citra/src/citra_qt/debugger/graphics/graphics_breakpoints.h;C:/citra/src/citra_qt/debugger/graphics/graphics_breakpoints_p.h;C:/citra/src/citra_qt/debugger/graphics/graphics_cmdlists.h;C:/citra/src/citra_qt/debugger/graphics/graphics_surface.h;C:/citra/src/citra_qt/debugger/graphics/graphics_tracing.h;C:/citra/src/citra_qt/debugger/graphics/graphics_vertex_shader.h;C:/citra/src/citra_qt/debugger/profiler.h;C:/citra/src/citra_qt/debugger/registers.h;C:/citra/src/citra_qt/debugger/wait_tree.h;C:/citra/src/citra_qt/util/spinbox.h;C:/citra/src/citra_qt/util/util.h;C:/citra/src/citra_qt/bootmanager.h;C:/citra/src/citra_qt/game_list.h;C:/citra/src/citra_qt/game_list_p.h;C:/citra/src/citra_qt/hotkeys.h;C:/citra/src/citra_qt/main.h;C:/citra/src/citra_qt/ui_settings.h;C:/citraw/src/citra_qt/ui_configure.h;C:/citraw/src/citra_qt/ui_configure_audio.h;C:/citraw/src/citra_qt/ui_configure_debug.h;C:/citraw/src/citra_qt/ui_configure_general.h;C:/citraw/src/citra_qt/ui_configure_graphics.h;C:/citraw/src/citra_qt/ui_configure_input.h;C:/citraw/src/citra_qt/ui_configure_system.h;C:/citraw/src/citra_qt/ui_registers.h;C:/citraw/src/citra_qt/ui_hotkeys.h;C:/citraw/src/citra_qt/ui_main.h")
+# Qt environment
+set(AM_QT_VERSION_MAJOR "5")
+set(AM_QT_MOC_EXECUTABLE "C:/citraw/externals/qt-5.7-msvc2015_64/bin/moc.exe")
+set(AM_QT_UIC_EXECUTABLE )
+set(AM_QT_RCC_EXECUTABLE )
+# MOC settings
+set(AM_MOC_SKIP "C:/citraw/src/citra_qt/citra-qt_autogen/mocs_compilation.cpp")
+set(AM_MOC_DEFINITIONS "ARCHITECTURE_x86_64=1;NDEBUG;NOMINMAX;QT_CORE_LIB;QT_GUI_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;SINGLETHREADED;WIN32_LEAN_AND_MEAN;WINVER=0x0600;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600")
+set(AM_MOC_INCLUDES "C:/citraw/src/citra_qt;C:/citra/src/citra_qt;C:/citraw/src/citra_qt/citra-qt_autogen/include;C:/citra/src/.;C:/citra/externals/boost;C:/citra/externals/./microprofile;C:/citra/externals/glad/include;C:/citra/externals/./nihstro/include;C:/citraw/externals/qt-5.7-msvc2015_64/include;C:/citraw/externals/qt-5.7-msvc2015_64/include/QtOpenGL;C:/citraw/externals/qt-5.7-msvc2015_64/include/QtWidgets;C:/citraw/externals/qt-5.7-msvc2015_64/include/QtGui;C:/citraw/externals/qt-5.7-msvc2015_64/include/QtCore;C:/citraw/externals/qt-5.7-msvc2015_64/./mkspecs/win32-msvc2015")
+set(AM_MOC_OPTIONS "")
+set(AM_MOC_RELAXED_MODE "FALSE")
+set(AM_MOC_DEPEND_FILTERS "")
+set(AM_MOC_PREDEFS_CMD )
+# UIC settings
+set(AM_UIC_SKIP )
+set(AM_UIC_TARGET_OPTIONS )
+set(AM_UIC_OPTIONS_FILES )
+set(AM_UIC_OPTIONS_OPTIONS )
+set(AM_UIC_SEARCH_PATHS )
+# RCC settings
+set(AM_RCC_SOURCES  )
+set(AM_RCC_INPUTS )
+set(AM_RCC_OPTIONS_FILES )
+set(AM_RCC_OPTIONS_OPTIONS )
+# Configuration specific options
+set(AM_MOC_DEFINITIONS_Debug "ARCHITECTURE_x86_64=1;NOMINMAX;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;SINGLETHREADED;WIN32_LEAN_AND_MEAN;WINVER=0x0600;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_DEBUG;_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600")

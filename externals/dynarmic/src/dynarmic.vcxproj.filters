@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\common\memory_pool.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\arm\types.cpp">
+      <Filter>frontend\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\disassembler\disassembler_arm.cpp">
+      <Filter>frontend\disassembler</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\disassembler\disassembler_thumb.cpp">
+      <Filter>frontend\disassembler</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\ir\basic_block.cpp">
+      <Filter>frontend\ir</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\ir\ir_emitter.cpp">
+      <Filter>frontend\ir</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\ir\location_descriptor.cpp">
+      <Filter>frontend\ir</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\ir\microinstruction.cpp">
+      <Filter>frontend\ir</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\ir\opcodes.cpp">
+      <Filter>frontend\ir</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\ir\value.cpp">
+      <Filter>frontend\ir</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate.cpp">
+      <Filter>frontend\translate</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm.cpp">
+      <Filter>frontend\translate</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\branch.cpp">
+      <Filter>frontend\translate\translate_arm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\coprocessor.cpp">
+      <Filter>frontend\translate\translate_arm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\data_processing.cpp">
+      <Filter>frontend\translate\translate_arm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\exception_generating.cpp">
+      <Filter>frontend\translate\translate_arm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\extension.cpp">
+      <Filter>frontend\translate\translate_arm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\load_store.cpp">
+      <Filter>frontend\translate\translate_arm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\misc.cpp">
+      <Filter>frontend\translate\translate_arm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\multiply.cpp">
+      <Filter>frontend\translate\translate_arm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\packing.cpp">
+      <Filter>frontend\translate\translate_arm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\parallel.cpp">
+      <Filter>frontend\translate\translate_arm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\reversal.cpp">
+      <Filter>frontend\translate\translate_arm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\saturated.cpp">
+      <Filter>frontend\translate\translate_arm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\status_register_access.cpp">
+      <Filter>frontend\translate\translate_arm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\synchronization.cpp">
+      <Filter>frontend\translate\translate_arm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\vfp2.cpp">
+      <Filter>frontend\translate\translate_arm</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_thumb.cpp">
+      <Filter>frontend\translate</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\ir_opt\constant_propagation_pass.cpp">
+      <Filter>ir_opt</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\ir_opt\dead_code_elimination_pass.cpp">
+      <Filter>ir_opt</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\ir_opt\get_set_elimination_pass.cpp">
+      <Filter>ir_opt</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\ir_opt\verification_pass.cpp">
+      <Filter>ir_opt</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\backend_x64\abi.cpp">
+      <Filter>backend_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\backend_x64\block_of_code.cpp">
+      <Filter>backend_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\backend_x64\constant_pool.cpp">
+      <Filter>backend_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\backend_x64\emit_x64.cpp">
+      <Filter>backend_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\backend_x64\hostloc.cpp">
+      <Filter>backend_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\backend_x64\interface_x64.cpp">
+      <Filter>backend_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\backend_x64\jitstate.cpp">
+      <Filter>backend_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\backend_x64\reg_alloc.cpp">
+      <Filter>backend_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\backend_x64\exception_handler_windows.cpp">
+      <Filter>backend_x64</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\citra\externals\dynarmic\include\dynarmic\callbacks.h">
+      <Filter>..\include\dynarmic</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\include\dynarmic\coprocessor.h">
+      <Filter>..\include\dynarmic</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\include\dynarmic\coprocessor_util.h">
+      <Filter>..\include\dynarmic</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\include\dynarmic\disassembler.h">
+      <Filter>..\include\dynarmic</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\include\dynarmic\dynarmic.h">
+      <Filter>..\include\dynarmic</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\common\address_range.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\common\assert.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\common\bit_util.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\common\common_types.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\common\intrusive_list.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\common\iterator_util.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\common\memory_pool.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\common\mp.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\common\scope_exit.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\common\string_util.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\common\variant_util.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\arm\FPSCR.h">
+      <Filter>frontend\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\arm\PSR.h">
+      <Filter>frontend\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\arm\types.h">
+      <Filter>frontend\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\decoder\arm.h">
+      <Filter>frontend\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\decoder\decoder_detail.h">
+      <Filter>frontend\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\decoder\matcher.h">
+      <Filter>frontend\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\decoder\thumb16.h">
+      <Filter>frontend\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\decoder\thumb32.h">
+      <Filter>frontend\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\decoder\vfp2.h">
+      <Filter>frontend\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\disassembler\disassembler.h">
+      <Filter>frontend\disassembler</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\ir\basic_block.h">
+      <Filter>frontend\ir</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\ir\ir_emitter.h">
+      <Filter>frontend\ir</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\ir\location_descriptor.h">
+      <Filter>frontend\ir</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\ir\microinstruction.h">
+      <Filter>frontend\ir</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\ir\opcodes.h">
+      <Filter>frontend\ir</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\ir\terminal.h">
+      <Filter>frontend\ir</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\ir\value.h">
+      <Filter>frontend\ir</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\translate\translate.h">
+      <Filter>frontend\translate</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\translate_arm.h">
+      <Filter>frontend\translate\translate_arm</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\ir_opt\passes.h">
+      <Filter>ir_opt</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\backend_x64\abi.h">
+      <Filter>backend_x64</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\backend_x64\block_of_code.h">
+      <Filter>backend_x64</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\backend_x64\constant_pool.h">
+      <Filter>backend_x64</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\backend_x64\emit_x64.h">
+      <Filter>backend_x64</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\backend_x64\hostloc.h">
+      <Filter>backend_x64</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\backend_x64\jitstate.h">
+      <Filter>backend_x64</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\backend_x64\oparg.h">
+      <Filter>backend_x64</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\externals\dynarmic\src\backend_x64\reg_alloc.h">
+      <Filter>backend_x64</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\externals\dynarmic\src\CMakeLists.txt">
+      <Filter>Other Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="frontend\arm">
+      <UniqueIdentifier>{BB6E8FA5-7A0F-3065-819C-2D6EEF9FB062}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="frontend\disassembler">
+      <UniqueIdentifier>{7E4BF51E-7301-30D1-81A3-ED38975B92D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="frontend\ir">
+      <UniqueIdentifier>{340014C1-1C4D-3AA3-8560-76C721ABE931}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="frontend\translate">
+      <UniqueIdentifier>{78024CD4-EBFA-3FC7-AA03-CFA8F5EF41BE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="frontend\decoder">
+      <UniqueIdentifier>{1771BDDC-4610-3C5D-A042-F0B1C2E94877}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="frontend\translate\translate_arm">
+      <UniqueIdentifier>{4BB88A0E-B304-3B8C-8287-9680A60D5DBC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\include\dynarmic">
+      <UniqueIdentifier>{1A46FA80-26DF-3271-B669-FB05963A21B5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\include">
+      <UniqueIdentifier>{A9A244DA-4A05-3373-8F51-79FC25A6D8E6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Other Files">
+      <UniqueIdentifier>{66AF7118-DDE2-31CE-A021-3D952A98F1CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{7A6A2B16-F0D6-3CD4-80E9-E8D134ED882B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="frontend">
+      <UniqueIdentifier>{0594B315-9E2B-370D-8196-2B4B67D22DA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ir_opt">
+      <UniqueIdentifier>{72DEBA7E-09CF-361A-A8D8-67250FC843F1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="backend_x64">
+      <UniqueIdentifier>{ECCFDCE6-6193-3F03-8A55-79BBEE30191F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{B764A604-C342-3279-B91C-3527907AB6DD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

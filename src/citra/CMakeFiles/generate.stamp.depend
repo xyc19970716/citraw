@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+C:/citra/src/citra/CMakeLists.txt
+C:/citra/CMakeModules/CopyCitraSDLDeps.cmake
+C:/citra/externals/cmake-modules/WindowsCopyFiles.cmake

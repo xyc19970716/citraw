@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9C3A2B53-4C91-38E7-A2FE-BA679B371489}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>cryptopp</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\citraw\externals\cryptopp\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cryptopp.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cryptopp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\citraw\externals\cryptopp\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cryptopp.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cryptopp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zo /permissive- /Zc:throwingNew,inline</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4390</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;SINGLETHREADED;_DEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;SINGLETHREADED;_WIN32_WINNT=0x0600;WINVER=0x0600;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;SINGLETHREADED;_DEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zo /permissive- /Zc:throwingNew,inline</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4390</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;SINGLETHREADED;NDEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;SINGLETHREADED;NDEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;SINGLETHREADED;NDEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\externals\cryptopp\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/citra/externals/cryptopp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/citra -BC:/citraw --check-stamp-file C:/citraw/externals/cryptopp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/citra/externals/cryptopp/CMakeLists.txt;C:\citra\externals\cryptopp\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.9\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\citraw\CMakeFiles\3.9.0-rc4\CMakeASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeASM_MASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\citra\externals\cryptopp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\citraw\externals\cryptopp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/citra/externals/cryptopp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/citra -BC:/citraw --check-stamp-file C:/citraw/externals/cryptopp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/citra/externals/cryptopp/CMakeLists.txt;C:\citra\externals\cryptopp\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.9\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\citraw\CMakeFiles\3.9.0-rc4\CMakeASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeASM_MASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\citra\externals\cryptopp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\citraw\externals\cryptopp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\3way.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\adler32.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\algebra.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\algparam.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\arc4.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\asn.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\authenc.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\base32.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\base64.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\basecode.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\bench1.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\bench2.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\bfinit.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\blake2.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\blowfish.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\blumshub.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\camellia.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\cast.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\casts.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\cbcmac.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\ccm.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\chacha.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\channels.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\cmac.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\cpu.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\crc.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\cryptlib.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\datatest.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\default.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\des.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\dessp.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\dh.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\dh2.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\dll.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\dlltest.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\dsa.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\eax.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\ec2n.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\eccrypto.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\ecp.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\elgamal.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\emsa2.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\eprecomp.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\esign.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\files.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\filters.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\fips140.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\fipsalgt.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\fipstest.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\gcm.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\gf256.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\gf2_32.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\gf2n.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\gfpcrypt.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\gost.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\gzip.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\hex.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\hmac.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\hrtimer.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\ida.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\idea.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\integer.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\iterhash.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\keccak.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\luc.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\mars.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\marss.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\md2.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\md4.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\md5.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\misc.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\modes.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\mqueue.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\mqv.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\nbtheory.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\network.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\oaep.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\osrng.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\panama.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\pkcspad.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\poly1305.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\polynomi.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\pssr.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\pubkey.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\queue.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\rabin.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\randpool.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\rc2.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\rc5.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\rc6.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\rdrand.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\rdtables.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\regtest.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\rijndael.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\ripemd.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\rng.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\rsa.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\rw.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\safer.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\salsa.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\seal.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\seed.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\serpent.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\sha.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\sha3.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\shacal2.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\shark.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\sharkbox.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\skipjack.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\socketft.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\sosemanuk.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\square.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\squaretb.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\strciphr.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\tea.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\test.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\tftables.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\tiger.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\tigertab.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\trdlocal.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\ttmac.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\twofish.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\validat0.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\validat1.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\validat2.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\validat3.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\vmac.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\wait.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\wake.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\whrlpool.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\xtr.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\xtrcrypt.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\zdeflate.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\zinflate.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\zlib.cpp"  />
+    <ClCompile Include="C:\citra\externals\cryptopp\cryptopp\winpipes.cpp"  />
+    <MASM Include="C:\citra\externals\cryptopp\cryptopp\x64dll.asm" >
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_M_X64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">_M_X64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </MASM>
+    <MASM Include="C:\citra\externals\cryptopp\cryptopp\x64masm.asm" >
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_M_X64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">_M_X64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\citraw\ZERO_CHECK.vcxproj">
+      <Project>{FF076AC6-6A21-3253-9CEB-BE630C8EB4D3}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

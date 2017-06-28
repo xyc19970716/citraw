@@ -1,0 +1,83 @@
+# CMake generation dependency list for this directory.
+C:/citra/CMakeLists.txt
+C:/citraw/CMakeFiles/3.9.0-rc4/CMakeSystem.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeSystemSpecificInitialize.cmake
+C:/citraw/CMakeFiles/3.9.0-rc4/CMakeCCompiler.cmake
+C:/citraw/CMakeFiles/3.9.0-rc4/CMakeCXXCompiler.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/Platform/Windows-MSVC.cmake
+C:/citraw/CMakeFiles/3.9.0-rc4/CMakeRCCompiler.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPNG.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindZLIB.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/SelectLibraryConfigurations.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/SelectLibraryConfigurations.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindBoost.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindBoost.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageMessage.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5/Qt5ConfigVersion.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5/Qt5Config.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeParseArguments.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Gui/Qt5Gui_QDDSPlugin.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeParseArguments.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfigVersion.cmake
+C:/citraw/externals/qt-5.7-msvc2015_64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfig.cmake
+C:/citra/externals/cmake-modules/GetGitRevisionDescription.cmake
+C:/citra/.git/HEAD
+C:/citra/externals/cmake-modules/GetGitRevisionDescription.cmake.in
+C:/citraw/CMakeFiles/git-data/grabRef.cmake
+C:/citra/.git/refs/heads/master
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindGit.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindGit.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindPackageMessage.cmake

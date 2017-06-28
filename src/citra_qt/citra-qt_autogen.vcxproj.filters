@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\src\citra_qt\CMakeLists.txt">
+      <Filter>Other Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\citra\src\citra_qt\configuration\configure.ui">
+      <Filter>configuration</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\citra\src\citra_qt\configuration\configure_audio.ui">
+      <Filter>configuration</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\citra\src\citra_qt\configuration\configure_debug.ui">
+      <Filter>configuration</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\citra\src\citra_qt\configuration\configure_general.ui">
+      <Filter>configuration</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\citra\src\citra_qt\configuration\configure_graphics.ui">
+      <Filter>configuration</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\citra\src\citra_qt\configuration\configure_input.ui">
+      <Filter>configuration</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\citra\src\citra_qt\configuration\configure_system.ui">
+      <Filter>configuration</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\citra\src\citra_qt\debugger\registers.ui">
+      <Filter>debugger</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\citra\src\citra_qt\hotkeys.ui" />
+    <CustomBuild Include="C:\citra\src\citra_qt\main.ui" />
+    <CustomBuild Include="C:\citraw\CMakeFiles\4e81936216c32f02d62d4fe5d267fe4d\citra-qt_autogen.rule">
+      <Filter>Other Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\citraw\src\citra_qt\CMakeFiles\citra-qt_autogen">
+      <Filter>Other Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Other Files">
+      <UniqueIdentifier>{66AF7118-DDE2-31CE-A021-3D952A98F1CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="configuration">
+      <UniqueIdentifier>{9E07EECE-0F31-3059-9FE8-C05211A56EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="debugger">
+      <UniqueIdentifier>{480626D1-BC79-39C4-BD29-4547A40606EA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

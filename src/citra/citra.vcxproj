@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8159E197-3634-3AC0-9B0B-BE2D6FEE7D0B}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>citra</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\citraw\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">citra.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">citra</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\citraw\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">citra.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">citra</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\citra\src\.;C:\citra\externals\boost;C:\citra\externals\.\microprofile;C:\citra\externals\inih\.;C:\citra\externals\glad\include;C:\citra\externals\getopt;C:\citraw\externals\SDL2-2.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zo /permissive- /Zc:throwingNew,inline</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;SINGLETHREADED;_DEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;STATIC_GETOPT;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;SINGLETHREADED;_WIN32_WINNT=0x0600;WINVER=0x0600;STATIC_GETOPT;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\citra\src\.;C:\citra\externals\boost;C:\citra\externals\.\microprofile;C:\citra\externals\inih\.;C:\citra\externals\glad\include;C:\citra\externals\getopt;C:\citraw\externals\SDL2-2.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;SINGLETHREADED;_DEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;STATIC_GETOPT;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\citra\src\.;C:\citra\externals\boost;C:\citra\externals\.\microprofile;C:\citra\externals\inih\.;C:\citra\externals\glad\include;C:\citra\externals\getopt;C:\citraw\externals\SDL2-2.0.5\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\citra\src\.;C:\citra\externals\boost;C:\citra\externals\.\microprofile;C:\citra\externals\inih\.;C:\citra\externals\glad\include;C:\citra\externals\getopt;C:\citraw\externals\SDL2-2.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+if not exist C:\\citraw\\bin\\Debug\\ mkdir C:\\citraw\\bin\\Debug\\ 2&gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+robocopy C:\\citraw\\externals\\SDL2-2.0.5\\lib\\x64 C:\\citraw\\bin\\Debug\\ SDL2.dll /NJH /NJS /NDL /NFL /NC /NS /NP || cmd /c "exit /b 0"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\common\Debug\common.lib;..\core\Debug\core.lib;..\input_common\Debug\input_common.lib;..\..\externals\inih\Debug\inih.lib;..\..\externals\glad\Debug\glad.lib;..\..\externals\getopt\Debug\getopt.lib;winmm.lib;ws2_32.lib;..\core\Debug\core.lib;..\audio_core\Debug\audio_core.lib;..\video_core\Debug\video_core.lib;..\core\Debug\core.lib;..\audio_core\Debug\audio_core.lib;..\video_core\Debug\video_core.lib;..\..\externals\cryptopp\Debug\cryptopp.lib;..\..\externals\dynarmic\src\Debug\dynarmic.lib;..\..\externals\fmt\fmt\Debug\fmt.lib;..\..\externals\soundtouch\Debug\SoundTouch.lib;..\common\Debug\common.lib;..\..\externals\glad\Debug\glad.lib;C:\msys64\mingw64\lib\libpng.dll.a;C:\msys64\mingw64\lib\libz.dll.a;..\..\externals\SDL2-2.0.5\lib\x64\SDL2.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/citraw/src/citra/Debug/citra.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/citraw/bin/Debug/citra.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\citra\src\.;C:\citra\externals\boost;C:\citra\externals\.\microprofile;C:\citra\externals\inih\.;C:\citra\externals\glad\include;C:\citra\externals\getopt;C:\citraw\externals\SDL2-2.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zo /permissive- /Zc:throwingNew,inline</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;SINGLETHREADED;NDEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;STATIC_GETOPT;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;SINGLETHREADED;NDEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;STATIC_GETOPT;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\citra\src\.;C:\citra\externals\boost;C:\citra\externals\.\microprofile;C:\citra\externals\inih\.;C:\citra\externals\glad\include;C:\citra\externals\getopt;C:\citraw\externals\SDL2-2.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;SINGLETHREADED;NDEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;STATIC_GETOPT;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\citra\src\.;C:\citra\externals\boost;C:\citra\externals\.\microprofile;C:\citra\externals\inih\.;C:\citra\externals\glad\include;C:\citra\externals\getopt;C:\citraw\externals\SDL2-2.0.5\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\citra\src\.;C:\citra\externals\boost;C:\citra\externals\.\microprofile;C:\citra\externals\inih\.;C:\citra\externals\glad\include;C:\citra\externals\getopt;C:\citraw\externals\SDL2-2.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+if not exist C:\\citraw\\bin\\Release\\ mkdir C:\\citraw\\bin\\Release\\ 2&gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+robocopy C:\\citraw\\externals\\SDL2-2.0.5\\lib\\x64 C:\\citraw\\bin\\Release\\ SDL2.dll /NJH /NJS /NDL /NFL /NC /NS /NP || cmd /c "exit /b 0"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\common\Release\common.lib;..\core\Release\core.lib;..\input_common\Release\input_common.lib;..\..\externals\inih\Release\inih.lib;..\..\externals\glad\Release\glad.lib;..\..\externals\getopt\Release\getopt.lib;winmm.lib;ws2_32.lib;..\core\Release\core.lib;..\audio_core\Release\audio_core.lib;..\video_core\Release\video_core.lib;..\core\Release\core.lib;..\audio_core\Release\audio_core.lib;..\video_core\Release\video_core.lib;..\..\externals\cryptopp\Release\cryptopp.lib;..\..\externals\dynarmic\src\Release\dynarmic.lib;..\..\externals\fmt\fmt\Release\fmt.lib;..\..\externals\soundtouch\Release\SoundTouch.lib;..\common\Release\common.lib;..\..\externals\glad\Release\glad.lib;C:\msys64\mingw64\lib\libpng.dll.a;C:\msys64\mingw64\lib\libz.dll.a;..\..\externals\SDL2-2.0.5\lib\x64\SDL2.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /OPT:REF,ICF</AdditionalOptions>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/citraw/src/citra/Release/citra.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/citraw/bin/Release/citra.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\src\citra\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/citra/src/citra/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/citra -BC:/citraw --check-stamp-file C:/citraw/src/citra/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/citra/src/citra/CMakeLists.txt;C:\citra\src\citra\CMakeLists.txt;C:\citra\CMakeModules\CopyCitraSDLDeps.cmake;C:\citra\externals\cmake-modules\WindowsCopyFiles.cmake;C:\citra\src\citra\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\citraw\src\citra\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/citra/src/citra/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/citra -BC:/citraw --check-stamp-file C:/citraw/src/citra/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/citra/src/citra/CMakeLists.txt;C:\citra\src\citra\CMakeLists.txt;C:\citra\CMakeModules\CopyCitraSDLDeps.cmake;C:\citra\externals\cmake-modules\WindowsCopyFiles.cmake;C:\citra\src\citra\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\citraw\src\citra\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\citra\src\citra\emu_window\emu_window_sdl2.cpp"  />
+    <ClCompile Include="C:\citra\src\citra\citra.cpp"  />
+    <ClCompile Include="C:\citra\src\citra\config.cpp"  />
+    <ResourceCompile Include="C:\citra\src\citra\citra.rc"  />
+    <ClInclude Include="C:\citra\src\citra\emu_window\emu_window_sdl2.h" />
+    <ClInclude Include="C:\citra\src\citra\config.h" />
+    <ClInclude Include="C:\citra\src\citra\default_ini.h" />
+    <ClInclude Include="C:\citra\src\citra\resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\citraw\ZERO_CHECK.vcxproj">
+      <Project>{FF076AC6-6A21-3253-9CEB-BE630C8EB4D3}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\externals\soundtouch\SoundTouch.vcxproj">
+      <Project>{4C90B5C6-BD21-3CEE-9D10-A23D44AD6EA8}</Project>
+      <Name>SoundTouch</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\src\common\common.vcxproj">
+      <Project>{33DD0332-7FF6-3AF2-8257-F503CDEC4742}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\src\core\core.vcxproj">
+      <Project>{4E61BBE8-FF8F-36D2-8183-E4632D73075D}</Project>
+      <Name>core</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\externals\cryptopp\cryptopp.vcxproj">
+      <Project>{9C3A2B53-4C91-38E7-A2FE-BA679B371489}</Project>
+      <Name>cryptopp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\externals\dynarmic\src\dynarmic.vcxproj">
+      <Project>{D5C6C90F-3BB7-3956-B2D0-7C8B44B86B9C}</Project>
+      <Name>dynarmic</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\externals\fmt\fmt\fmt.vcxproj">
+      <Project>{782B3F9B-ED7B-377B-8EB4-490464915939}</Project>
+      <Name>fmt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\externals\getopt\getopt.vcxproj">
+      <Project>{08FA151D-98FD-3811-BCE7-DD21BCA79561}</Project>
+      <Name>getopt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\externals\glad\glad.vcxproj">
+      <Project>{1F68E14B-4832-35B3-8D6A-9A8C3470D0E7}</Project>
+      <Name>glad</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\externals\inih\inih.vcxproj">
+      <Project>{6F54CDA6-BAAB-3642-A595-AB5302D48E1B}</Project>
+      <Name>inih</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\src\input_common\input_common.vcxproj">
+      <Project>{5D3BDF17-49BC-3F84-92CC-FFA52EF34528}</Project>
+      <Name>input_common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

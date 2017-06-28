@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\citra\src\citra_qt\configuration\config.cpp">
+      <Filter>configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\citra_qt\configuration\configure_audio.cpp">
+      <Filter>configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\citra_qt\configuration\configure_debug.cpp">
+      <Filter>configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\citra_qt\configuration\configure_dialog.cpp">
+      <Filter>configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\citra_qt\configuration\configure_general.cpp">
+      <Filter>configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\citra_qt\configuration\configure_graphics.cpp">
+      <Filter>configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\citra_qt\configuration\configure_input.cpp">
+      <Filter>configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\citra_qt\configuration\configure_system.cpp">
+      <Filter>configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\citra_qt\debugger\graphics\graphics.cpp">
+      <Filter>debugger\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\citra_qt\debugger\graphics\graphics_breakpoint_observer.cpp">
+      <Filter>debugger\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\citra_qt\debugger\graphics\graphics_breakpoints.cpp">
+      <Filter>debugger\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\citra_qt\debugger\graphics\graphics_cmdlists.cpp">
+      <Filter>debugger\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\citra_qt\debugger\graphics\graphics_surface.cpp">
+      <Filter>debugger\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\citra_qt\debugger\graphics\graphics_tracing.cpp">
+      <Filter>debugger\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\citra_qt\debugger\graphics\graphics_vertex_shader.cpp">
+      <Filter>debugger\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\citra_qt\debugger\profiler.cpp">
+      <Filter>debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\citra_qt\debugger\registers.cpp">
+      <Filter>debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\citra_qt\debugger\wait_tree.cpp">
+      <Filter>debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\citra_qt\util\spinbox.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\citra_qt\util\util.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\citra_qt\bootmanager.cpp" />
+    <ClCompile Include="C:\citra\src\citra_qt\game_list.cpp" />
+    <ClCompile Include="C:\citra\src\citra_qt\hotkeys.cpp" />
+    <ClCompile Include="C:\citra\src\citra_qt\main.cpp" />
+    <ClCompile Include="C:\citra\src\citra_qt\ui_settings.cpp" />
+    <ClCompile Include="C:\citraw\src\citra_qt\citra-qt_autogen\mocs_compilation.cpp">
+      <Filter>Other Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\citra\src\citra_qt\configuration\config.h">
+      <Filter>configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\citra_qt\configuration\configure_audio.h">
+      <Filter>configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\citra_qt\configuration\configure_debug.h">
+      <Filter>configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\citra_qt\configuration\configure_dialog.h">
+      <Filter>configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\citra_qt\configuration\configure_general.h">
+      <Filter>configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\citra_qt\configuration\configure_graphics.h">
+      <Filter>configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\citra_qt\configuration\configure_input.h">
+      <Filter>configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\citra_qt\configuration\configure_system.h">
+      <Filter>configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\citra_qt\debugger\graphics\graphics.h">
+      <Filter>debugger\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\citra_qt\debugger\graphics\graphics_breakpoint_observer.h">
+      <Filter>debugger\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\citra_qt\debugger\graphics\graphics_breakpoints.h">
+      <Filter>debugger\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\citra_qt\debugger\graphics\graphics_breakpoints_p.h">
+      <Filter>debugger\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\citra_qt\debugger\graphics\graphics_cmdlists.h">
+      <Filter>debugger\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\citra_qt\debugger\graphics\graphics_surface.h">
+      <Filter>debugger\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\citra_qt\debugger\graphics\graphics_tracing.h">
+      <Filter>debugger\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\citra_qt\debugger\graphics\graphics_vertex_shader.h">
+      <Filter>debugger\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\citra_qt\debugger\profiler.h">
+      <Filter>debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\citra_qt\debugger\registers.h">
+      <Filter>debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\citra_qt\debugger\wait_tree.h">
+      <Filter>debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\citra_qt\util\spinbox.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\citra_qt\util\util.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\citra_qt\bootmanager.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\game_list.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\game_list_p.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\hotkeys.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\main.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\ui_settings.h" />
+    <ClInclude Include="C:\citraw\src\citra_qt\ui_configure.h">
+      <Filter>Other Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citraw\src\citra_qt\ui_configure_audio.h">
+      <Filter>Other Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citraw\src\citra_qt\ui_configure_debug.h">
+      <Filter>Other Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citraw\src\citra_qt\ui_configure_general.h">
+      <Filter>Other Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citraw\src\citra_qt\ui_configure_graphics.h">
+      <Filter>Other Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citraw\src\citra_qt\ui_configure_input.h">
+      <Filter>Other Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citraw\src\citra_qt\ui_configure_system.h">
+      <Filter>Other Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citraw\src\citra_qt\ui_registers.h">
+      <Filter>Other Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citraw\src\citra_qt\ui_hotkeys.h">
+      <Filter>Other Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citraw\src\citra_qt\ui_main.h">
+      <Filter>Other Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\src\citra_qt\CMakeLists.txt">
+      <Filter>Other Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\citra\src\citra_qt\configuration\configure.ui">
+      <Filter>configuration</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\citra\src\citra_qt\configuration\configure_audio.ui">
+      <Filter>configuration</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\citra\src\citra_qt\configuration\configure_debug.ui">
+      <Filter>configuration</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\citra\src\citra_qt\configuration\configure_general.ui">
+      <Filter>configuration</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\citra\src\citra_qt\configuration\configure_graphics.ui">
+      <Filter>configuration</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\citra\src\citra_qt\configuration\configure_input.ui">
+      <Filter>configuration</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\citra\src\citra_qt\configuration\configure_system.ui">
+      <Filter>configuration</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\citra\src\citra_qt\debugger\registers.ui">
+      <Filter>debugger</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\citra\src\citra_qt\hotkeys.ui" />
+    <CustomBuild Include="C:\citra\src\citra_qt\main.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\citra\src\citra_qt\Info.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\citra\src\citra_qt\citra-qt.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="debugger\graphics">
+      <UniqueIdentifier>{F84DE3C5-13D5-3869-AEC6-7DE3CB5DA1EA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Other Files">
+      <UniqueIdentifier>{66AF7118-DDE2-31CE-A021-3D952A98F1CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="configuration">
+      <UniqueIdentifier>{9E07EECE-0F31-3059-9FE8-C05211A56EA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="debugger">
+      <UniqueIdentifier>{480626D1-BC79-39C4-BD29-4547A40606EA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{5C95255A-F5AC-3CAC-936D-52699C2CD076}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

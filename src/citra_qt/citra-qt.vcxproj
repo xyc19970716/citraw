@@ -1,0 +1,665 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{27694D1B-0429-360A-9707-64F884738010}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>citra-qt</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\citraw\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">citra-qt.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">citra-qt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\citraw\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">citra-qt.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">citra-qt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\citraw\src\citra_qt;C:\citra\src\citra_qt;C:\citraw\src\citra_qt\citra-qt_autogen\include;C:\citra\src\.;C:\citra\externals\boost;C:\citra\externals\.\microprofile;C:\citra\externals\glad\include;C:\citra\externals\.\nihstro\include;C:\citraw\externals\qt-5.7-msvc2015_64\include;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtOpenGL;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtWidgets;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtGui;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtCore;C:\citraw\externals\qt-5.7-msvc2015_64\.\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zo /permissive- /Zc:throwingNew,inline</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;SINGLETHREADED;_DEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;SINGLETHREADED;_WIN32_WINNT=0x0600;WINVER=0x0600;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\citraw\src\citra_qt;C:\citra\src\citra_qt;C:\citraw\src\citra_qt\citra-qt_autogen\include;C:\citra\src\.;C:\citra\externals\boost;C:\citra\externals\.\microprofile;C:\citra\externals\glad\include;C:\citra\externals\.\nihstro\include;C:\citraw\externals\qt-5.7-msvc2015_64\include;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtOpenGL;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtWidgets;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtGui;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtCore;C:\citraw\externals\qt-5.7-msvc2015_64\.\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;SINGLETHREADED;_DEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\citraw\src\citra_qt;C:\citra\src\citra_qt;C:\citraw\src\citra_qt\citra-qt_autogen\include;C:\citra\src\.;C:\citra\externals\boost;C:\citra\externals\.\microprofile;C:\citra\externals\glad\include;C:\citra\externals\.\nihstro\include;C:\citraw\externals\qt-5.7-msvc2015_64\include;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtOpenGL;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtWidgets;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtGui;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtCore;C:\citraw\externals\qt-5.7-msvc2015_64\.\mkspecs\win32-msvc2015;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\citraw\src\citra_qt;C:\citra\src\citra_qt;C:\citraw\src\citra_qt\citra-qt_autogen\include;C:\citra\src\.;C:\citra\externals\boost;C:\citra\externals\.\microprofile;C:\citra\externals\glad\include;C:\citra\externals\.\nihstro\include;C:\citraw\externals\qt-5.7-msvc2015_64\include;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtOpenGL;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtWidgets;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtGui;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtCore;C:\citraw\externals\qt-5.7-msvc2015_64\.\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>		</Message>
+      <Command>setlocal
+if not exist C:\\citraw\\bin\\Debug\\ mkdir C:\\citraw\\bin\\Debug\\ 2&gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+robocopy C:\\citraw\\externals\\qt-5.7-msvc2015_64\\lib\\cmake\\Qt5\\..\\..\\..\\bin C:\\citraw\\bin\\Debug\\ icudt*.dll icuin*.dll icuuc*.dll Qt5Cored.* Qt5Guid.* Qt5OpenGLd.* Qt5Widgetsd.* /NJH /NJS /NDL /NFL /NC /NS /NP || cmd /c "exit /b 0"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if not exist C:\\citraw\\bin\\Debug\\platforms\\ mkdir C:\\citraw\\bin\\Debug\\platforms\\ 2&gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+robocopy C:\\citraw\\externals\\qt-5.7-msvc2015_64\\lib\\cmake\\Qt5\\..\\..\\..\\plugins\\platforms\\ C:\\citraw\\bin\\Debug\\platforms\\ qwindowsd.* /NJH /NJS /NDL /NFL /NC /NS /NP || cmd /c "exit /b 0"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if not exist C:\\citraw\\bin\\Debug\\ mkdir C:\\citraw\\bin\\Debug\\ 2&gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+robocopy C:\\citraw\\externals\\SDL2-2.0.5\\lib\\x64 C:\\citraw\\bin\\Debug\\ SDL2.dll /NJH /NJS /NDL /NFL /NC /NS /NP || cmd /c "exit /b 0"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\audio_core\Debug\audio_core.lib;..\common\Debug\common.lib;..\core\Debug\core.lib;..\input_common\Debug\input_common.lib;..\video_core\Debug\video_core.lib;..\..\externals\glad\Debug\glad.lib;..\..\externals\qt-5.7-msvc2015_64\lib\Qt5OpenGLd.lib;..\..\externals\qt-5.7-msvc2015_64\lib\Qt5Widgetsd.lib;winmm.lib;ws2_32.lib;..\audio_core\Debug\audio_core.lib;..\core\Debug\core.lib;..\audio_core\Debug\audio_core.lib;..\core\Debug\core.lib;..\video_core\Debug\video_core.lib;..\..\externals\soundtouch\Debug\SoundTouch.lib;..\..\externals\cryptopp\Debug\cryptopp.lib;..\..\externals\dynarmic\src\Debug\dynarmic.lib;..\..\externals\fmt\fmt\Debug\fmt.lib;..\common\Debug\common.lib;..\..\externals\glad\Debug\glad.lib;C:\msys64\mingw64\lib\libpng.dll.a;C:\msys64\mingw64\lib\libz.dll.a;..\..\externals\SDL2-2.0.5\lib\x64\SDL2.lib;..\..\externals\qt-5.7-msvc2015_64\lib\Qt5Guid.lib;..\..\externals\qt-5.7-msvc2015_64\lib\Qt5Cored.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/citraw/src/citra_qt/Debug/citra-qt.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/citraw/bin/Debug/citra-qt.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\citraw\src\citra_qt;C:\citra\src\citra_qt;C:\citraw\src\citra_qt\citra-qt_autogen\include;C:\citra\src\.;C:\citra\externals\boost;C:\citra\externals\.\microprofile;C:\citra\externals\glad\include;C:\citra\externals\.\nihstro\include;C:\citraw\externals\qt-5.7-msvc2015_64\include;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtOpenGL;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtWidgets;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtGui;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtCore;C:\citraw\externals\qt-5.7-msvc2015_64\.\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zo /permissive- /Zc:throwingNew,inline</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;SINGLETHREADED;NDEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;SINGLETHREADED;NDEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\citraw\src\citra_qt;C:\citra\src\citra_qt;C:\citraw\src\citra_qt\citra-qt_autogen\include;C:\citra\src\.;C:\citra\externals\boost;C:\citra\externals\.\microprofile;C:\citra\externals\glad\include;C:\citra\externals\.\nihstro\include;C:\citraw\externals\qt-5.7-msvc2015_64\include;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtOpenGL;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtWidgets;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtGui;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtCore;C:\citraw\externals\qt-5.7-msvc2015_64\.\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;SINGLETHREADED;NDEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\citraw\src\citra_qt;C:\citra\src\citra_qt;C:\citraw\src\citra_qt\citra-qt_autogen\include;C:\citra\src\.;C:\citra\externals\boost;C:\citra\externals\.\microprofile;C:\citra\externals\glad\include;C:\citra\externals\.\nihstro\include;C:\citraw\externals\qt-5.7-msvc2015_64\include;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtOpenGL;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtWidgets;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtGui;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtCore;C:\citraw\externals\qt-5.7-msvc2015_64\.\mkspecs\win32-msvc2015;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\citraw\src\citra_qt;C:\citra\src\citra_qt;C:\citraw\src\citra_qt\citra-qt_autogen\include;C:\citra\src\.;C:\citra\externals\boost;C:\citra\externals\.\microprofile;C:\citra\externals\glad\include;C:\citra\externals\.\nihstro\include;C:\citraw\externals\qt-5.7-msvc2015_64\include;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtOpenGL;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtWidgets;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtGui;C:\citraw\externals\qt-5.7-msvc2015_64\include\QtCore;C:\citraw\externals\qt-5.7-msvc2015_64\.\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>		</Message>
+      <Command>setlocal
+if not exist C:\\citraw\\bin\\Release\\ mkdir C:\\citraw\\bin\\Release\\ 2&gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+robocopy C:\\citraw\\externals\\qt-5.7-msvc2015_64\\lib\\cmake\\Qt5\\..\\..\\..\\bin C:\\citraw\\bin\\Release\\ icudt*.dll icuin*.dll icuuc*.dll Qt5Core.* Qt5Gui.* Qt5OpenGL.* Qt5Widgets.* /NJH /NJS /NDL /NFL /NC /NS /NP || cmd /c "exit /b 0"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if not exist C:\\citraw\\bin\\Release\\platforms\\ mkdir C:\\citraw\\bin\\Release\\platforms\\ 2&gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+robocopy C:\\citraw\\externals\\qt-5.7-msvc2015_64\\lib\\cmake\\Qt5\\..\\..\\..\\plugins\\platforms\\ C:\\citraw\\bin\\Release\\platforms\\ qwindows.* /NJH /NJS /NDL /NFL /NC /NS /NP || cmd /c "exit /b 0"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if not exist C:\\citraw\\bin\\Release\\ mkdir C:\\citraw\\bin\\Release\\ 2&gt; nul
+if %errorlevel% neq 0 goto :cmEnd
+robocopy C:\\citraw\\externals\\SDL2-2.0.5\\lib\\x64 C:\\citraw\\bin\\Release\\ SDL2.dll /NJH /NJS /NDL /NFL /NC /NS /NP || cmd /c "exit /b 0"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\audio_core\Release\audio_core.lib;..\common\Release\common.lib;..\core\Release\core.lib;..\input_common\Release\input_common.lib;..\video_core\Release\video_core.lib;..\..\externals\glad\Release\glad.lib;..\..\externals\qt-5.7-msvc2015_64\lib\Qt5OpenGL.lib;..\..\externals\qt-5.7-msvc2015_64\lib\Qt5Widgets.lib;winmm.lib;ws2_32.lib;..\audio_core\Release\audio_core.lib;..\core\Release\core.lib;..\audio_core\Release\audio_core.lib;..\core\Release\core.lib;..\video_core\Release\video_core.lib;..\..\externals\soundtouch\Release\SoundTouch.lib;..\..\externals\cryptopp\Release\cryptopp.lib;..\..\externals\dynarmic\src\Release\dynarmic.lib;..\..\externals\fmt\fmt\Release\fmt.lib;..\common\Release\common.lib;..\..\externals\glad\Release\glad.lib;C:\msys64\mingw64\lib\libpng.dll.a;C:\msys64\mingw64\lib\libz.dll.a;..\..\externals\SDL2-2.0.5\lib\x64\SDL2.lib;..\..\externals\qt-5.7-msvc2015_64\lib\Qt5Gui.lib;..\..\externals\qt-5.7-msvc2015_64\lib\Qt5Core.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /OPT:REF,ICF</AdditionalOptions>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/citraw/src/citra_qt/Release/citra-qt.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/citraw/bin/Release/citra-qt.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\src\citra_qt\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/citra/src/citra_qt/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/citra -BC:/citraw --check-stamp-file C:/citraw/src/citra_qt/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/citra/src/citra_qt/CMakeLists.txt;C:\citra\src\citra_qt\CMakeLists.txt;C:\citra\CMakeModules\CopyCitraQt5Deps.cmake;C:\citra\CMakeModules\CopyCitraSDLDeps.cmake;C:\citra\externals\cmake-modules\WindowsCopyFiles.cmake;C:\citra\externals\cmake-modules\WindowsCopyFiles.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\AutogenInfo.cmake.in;C:\citra\src\citra_qt\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\citraw\src\citra_qt\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/citra/src/citra_qt/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/citra -BC:/citraw --check-stamp-file C:/citraw/src/citra_qt/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/citra/src/citra_qt/CMakeLists.txt;C:\citra\src\citra_qt\CMakeLists.txt;C:\citra\CMakeModules\CopyCitraQt5Deps.cmake;C:\citra\CMakeModules\CopyCitraSDLDeps.cmake;C:\citra\externals\cmake-modules\WindowsCopyFiles.cmake;C:\citra\externals\cmake-modules\WindowsCopyFiles.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\AutogenInfo.cmake.in;C:\citra\src\citra_qt\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\citraw\src\citra_qt\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\src\citra_qt\configuration\configure.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_configure.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\externals\qt-5.7-msvc2015_64\bin\uic.exe -o C:/citraw/src/citra_qt/ui_configure.h C:/citra/src/citra_qt/configuration/configure.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/citra/src/citra_qt/configuration/configure.ui;C:\citra\src\citra_qt\configuration\configure.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\citraw\src\citra_qt\ui_configure.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_configure.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\externals\qt-5.7-msvc2015_64\bin\uic.exe -o C:/citraw/src/citra_qt/ui_configure.h C:/citra/src/citra_qt/configuration/configure.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/citra/src/citra_qt/configuration/configure.ui;C:\citra\src\citra_qt\configuration\configure.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\citraw\src\citra_qt\ui_configure.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\src\citra_qt\configuration\configure_audio.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_configure_audio.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\externals\qt-5.7-msvc2015_64\bin\uic.exe -o C:/citraw/src/citra_qt/ui_configure_audio.h C:/citra/src/citra_qt/configuration/configure_audio.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/citra/src/citra_qt/configuration/configure_audio.ui;C:\citra\src\citra_qt\configuration\configure_audio.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\citraw\src\citra_qt\ui_configure_audio.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_configure_audio.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\externals\qt-5.7-msvc2015_64\bin\uic.exe -o C:/citraw/src/citra_qt/ui_configure_audio.h C:/citra/src/citra_qt/configuration/configure_audio.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/citra/src/citra_qt/configuration/configure_audio.ui;C:\citra\src\citra_qt\configuration\configure_audio.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\citraw\src\citra_qt\ui_configure_audio.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\src\citra_qt\configuration\configure_debug.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_configure_debug.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\externals\qt-5.7-msvc2015_64\bin\uic.exe -o C:/citraw/src/citra_qt/ui_configure_debug.h C:/citra/src/citra_qt/configuration/configure_debug.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/citra/src/citra_qt/configuration/configure_debug.ui;C:\citra\src\citra_qt\configuration\configure_debug.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\citraw\src\citra_qt\ui_configure_debug.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_configure_debug.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\externals\qt-5.7-msvc2015_64\bin\uic.exe -o C:/citraw/src/citra_qt/ui_configure_debug.h C:/citra/src/citra_qt/configuration/configure_debug.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/citra/src/citra_qt/configuration/configure_debug.ui;C:\citra\src\citra_qt\configuration\configure_debug.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\citraw\src\citra_qt\ui_configure_debug.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\src\citra_qt\configuration\configure_general.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_configure_general.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\externals\qt-5.7-msvc2015_64\bin\uic.exe -o C:/citraw/src/citra_qt/ui_configure_general.h C:/citra/src/citra_qt/configuration/configure_general.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/citra/src/citra_qt/configuration/configure_general.ui;C:\citra\src\citra_qt\configuration\configure_general.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\citraw\src\citra_qt\ui_configure_general.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_configure_general.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\externals\qt-5.7-msvc2015_64\bin\uic.exe -o C:/citraw/src/citra_qt/ui_configure_general.h C:/citra/src/citra_qt/configuration/configure_general.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/citra/src/citra_qt/configuration/configure_general.ui;C:\citra\src\citra_qt\configuration\configure_general.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\citraw\src\citra_qt\ui_configure_general.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\src\citra_qt\configuration\configure_graphics.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_configure_graphics.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\externals\qt-5.7-msvc2015_64\bin\uic.exe -o C:/citraw/src/citra_qt/ui_configure_graphics.h C:/citra/src/citra_qt/configuration/configure_graphics.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/citra/src/citra_qt/configuration/configure_graphics.ui;C:\citra\src\citra_qt\configuration\configure_graphics.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\citraw\src\citra_qt\ui_configure_graphics.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_configure_graphics.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\externals\qt-5.7-msvc2015_64\bin\uic.exe -o C:/citraw/src/citra_qt/ui_configure_graphics.h C:/citra/src/citra_qt/configuration/configure_graphics.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/citra/src/citra_qt/configuration/configure_graphics.ui;C:\citra\src\citra_qt\configuration\configure_graphics.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\citraw\src\citra_qt\ui_configure_graphics.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\src\citra_qt\configuration\configure_input.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_configure_input.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\externals\qt-5.7-msvc2015_64\bin\uic.exe -o C:/citraw/src/citra_qt/ui_configure_input.h C:/citra/src/citra_qt/configuration/configure_input.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/citra/src/citra_qt/configuration/configure_input.ui;C:\citra\src\citra_qt\configuration\configure_input.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\citraw\src\citra_qt\ui_configure_input.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_configure_input.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\externals\qt-5.7-msvc2015_64\bin\uic.exe -o C:/citraw/src/citra_qt/ui_configure_input.h C:/citra/src/citra_qt/configuration/configure_input.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/citra/src/citra_qt/configuration/configure_input.ui;C:\citra\src\citra_qt\configuration\configure_input.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\citraw\src\citra_qt\ui_configure_input.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\src\citra_qt\configuration\configure_system.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_configure_system.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\externals\qt-5.7-msvc2015_64\bin\uic.exe -o C:/citraw/src/citra_qt/ui_configure_system.h C:/citra/src/citra_qt/configuration/configure_system.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/citra/src/citra_qt/configuration/configure_system.ui;C:\citra\src\citra_qt\configuration\configure_system.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\citraw\src\citra_qt\ui_configure_system.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_configure_system.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\externals\qt-5.7-msvc2015_64\bin\uic.exe -o C:/citraw/src/citra_qt/ui_configure_system.h C:/citra/src/citra_qt/configuration/configure_system.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/citra/src/citra_qt/configuration/configure_system.ui;C:\citra\src\citra_qt\configuration\configure_system.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\citraw\src\citra_qt\ui_configure_system.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\src\citra_qt\debugger\registers.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_registers.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\externals\qt-5.7-msvc2015_64\bin\uic.exe -o C:/citraw/src/citra_qt/ui_registers.h C:/citra/src/citra_qt/debugger/registers.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/citra/src/citra_qt/debugger/registers.ui;C:\citra\src\citra_qt\debugger\registers.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\citraw\src\citra_qt\ui_registers.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_registers.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\externals\qt-5.7-msvc2015_64\bin\uic.exe -o C:/citraw/src/citra_qt/ui_registers.h C:/citra/src/citra_qt/debugger/registers.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/citra/src/citra_qt/debugger/registers.ui;C:\citra\src\citra_qt\debugger\registers.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\citraw\src\citra_qt\ui_registers.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\src\citra_qt\hotkeys.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_hotkeys.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\externals\qt-5.7-msvc2015_64\bin\uic.exe -o C:/citraw/src/citra_qt/ui_hotkeys.h C:/citra/src/citra_qt/hotkeys.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/citra/src/citra_qt/hotkeys.ui;C:\citra\src\citra_qt\hotkeys.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\citraw\src\citra_qt\ui_hotkeys.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_hotkeys.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\externals\qt-5.7-msvc2015_64\bin\uic.exe -o C:/citraw/src/citra_qt/ui_hotkeys.h C:/citra/src/citra_qt/hotkeys.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/citra/src/citra_qt/hotkeys.ui;C:\citra\src\citra_qt\hotkeys.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\citraw\src\citra_qt\ui_hotkeys.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\src\citra_qt\main.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_main.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\externals\qt-5.7-msvc2015_64\bin\uic.exe -o C:/citraw/src/citra_qt/ui_main.h C:/citra/src/citra_qt/main.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/citra/src/citra_qt/main.ui;C:\citra\src\citra_qt\main.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\citraw\src\citra_qt\ui_main.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_main.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\externals\qt-5.7-msvc2015_64\bin\uic.exe -o C:/citraw/src/citra_qt/ui_main.h C:/citra/src/citra_qt/main.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/citra/src/citra_qt/main.ui;C:\citra\src\citra_qt\main.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\citraw\src\citra_qt\ui_main.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\citra\src\citra_qt\configuration\config.cpp"  />
+    <ClCompile Include="C:\citra\src\citra_qt\configuration\configure_audio.cpp"  />
+    <ClCompile Include="C:\citra\src\citra_qt\configuration\configure_debug.cpp"  />
+    <ClCompile Include="C:\citra\src\citra_qt\configuration\configure_dialog.cpp"  />
+    <ClCompile Include="C:\citra\src\citra_qt\configuration\configure_general.cpp"  />
+    <ClCompile Include="C:\citra\src\citra_qt\configuration\configure_graphics.cpp"  />
+    <ClCompile Include="C:\citra\src\citra_qt\configuration\configure_input.cpp"  />
+    <ClCompile Include="C:\citra\src\citra_qt\configuration\configure_system.cpp"  />
+    <ClCompile Include="C:\citra\src\citra_qt\debugger\graphics\graphics.cpp"  />
+    <ClCompile Include="C:\citra\src\citra_qt\debugger\graphics\graphics_breakpoint_observer.cpp"  />
+    <ClCompile Include="C:\citra\src\citra_qt\debugger\graphics\graphics_breakpoints.cpp"  />
+    <ClCompile Include="C:\citra\src\citra_qt\debugger\graphics\graphics_cmdlists.cpp"  />
+    <ClCompile Include="C:\citra\src\citra_qt\debugger\graphics\graphics_surface.cpp"  />
+    <ClCompile Include="C:\citra\src\citra_qt\debugger\graphics\graphics_tracing.cpp"  />
+    <ClCompile Include="C:\citra\src\citra_qt\debugger\graphics\graphics_vertex_shader.cpp"  />
+    <ClCompile Include="C:\citra\src\citra_qt\debugger\profiler.cpp"  />
+    <ClCompile Include="C:\citra\src\citra_qt\debugger\registers.cpp"  />
+    <ClCompile Include="C:\citra\src\citra_qt\debugger\wait_tree.cpp"  />
+    <ClCompile Include="C:\citra\src\citra_qt\util\spinbox.cpp"  />
+    <ClCompile Include="C:\citra\src\citra_qt\util\util.cpp"  />
+    <ClCompile Include="C:\citra\src\citra_qt\bootmanager.cpp"  />
+    <ClCompile Include="C:\citra\src\citra_qt\game_list.cpp"  />
+    <ClCompile Include="C:\citra\src\citra_qt\hotkeys.cpp"  />
+    <ClCompile Include="C:\citra\src\citra_qt\main.cpp"  />
+    <ClCompile Include="C:\citra\src\citra_qt\ui_settings.cpp"  />
+    <ResourceCompile Include="C:\citra\src\citra_qt\citra-qt.rc"  />
+    <None Include="C:\citra\src\citra_qt\Info.plist" />
+    <ClInclude Include="C:\citra\src\citra_qt\configuration\config.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\configuration\configure_audio.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\configuration\configure_debug.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\configuration\configure_dialog.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\configuration\configure_general.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\configuration\configure_graphics.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\configuration\configure_input.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\configuration\configure_system.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\debugger\graphics\graphics.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\debugger\graphics\graphics_breakpoint_observer.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\debugger\graphics\graphics_breakpoints.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\debugger\graphics\graphics_breakpoints_p.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\debugger\graphics\graphics_cmdlists.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\debugger\graphics\graphics_surface.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\debugger\graphics\graphics_tracing.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\debugger\graphics\graphics_vertex_shader.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\debugger\profiler.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\debugger\registers.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\debugger\wait_tree.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\util\spinbox.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\util\util.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\bootmanager.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\game_list.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\game_list_p.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\hotkeys.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\main.h" />
+    <ClInclude Include="C:\citra\src\citra_qt\ui_settings.h" />
+    <ClInclude Include="C:\citraw\src\citra_qt\ui_configure.h" />
+    <ClInclude Include="C:\citraw\src\citra_qt\ui_configure_audio.h" />
+    <ClInclude Include="C:\citraw\src\citra_qt\ui_configure_debug.h" />
+    <ClInclude Include="C:\citraw\src\citra_qt\ui_configure_general.h" />
+    <ClInclude Include="C:\citraw\src\citra_qt\ui_configure_graphics.h" />
+    <ClInclude Include="C:\citraw\src\citra_qt\ui_configure_input.h" />
+    <ClInclude Include="C:\citraw\src\citra_qt\ui_configure_system.h" />
+    <ClInclude Include="C:\citraw\src\citra_qt\ui_registers.h" />
+    <ClInclude Include="C:\citraw\src\citra_qt\ui_hotkeys.h" />
+    <ClInclude Include="C:\citraw\src\citra_qt\ui_main.h" />
+    <ClCompile Include="C:\citraw\src\citra_qt\citra-qt_autogen\mocs_compilation.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\citraw\ZERO_CHECK.vcxproj">
+      <Project>{FF076AC6-6A21-3253-9CEB-BE630C8EB4D3}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\externals\soundtouch\SoundTouch.vcxproj">
+      <Project>{4C90B5C6-BD21-3CEE-9D10-A23D44AD6EA8}</Project>
+      <Name>SoundTouch</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\src\citra_qt\citra-qt_autogen.vcxproj">
+      <Project>{56B518D0-35D4-3078-A7EB-11D08EB57C51}</Project>
+      <Name>citra-qt_autogen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\src\common\common.vcxproj">
+      <Project>{33DD0332-7FF6-3AF2-8257-F503CDEC4742}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\src\core\core.vcxproj">
+      <Project>{4E61BBE8-FF8F-36D2-8183-E4632D73075D}</Project>
+      <Name>core</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\externals\cryptopp\cryptopp.vcxproj">
+      <Project>{9C3A2B53-4C91-38E7-A2FE-BA679B371489}</Project>
+      <Name>cryptopp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\externals\dynarmic\src\dynarmic.vcxproj">
+      <Project>{D5C6C90F-3BB7-3956-B2D0-7C8B44B86B9C}</Project>
+      <Name>dynarmic</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\externals\fmt\fmt\fmt.vcxproj">
+      <Project>{782B3F9B-ED7B-377B-8EB4-490464915939}</Project>
+      <Name>fmt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\externals\glad\glad.vcxproj">
+      <Project>{1F68E14B-4832-35B3-8D6A-9A8C3470D0E7}</Project>
+      <Name>glad</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\src\input_common\input_common.vcxproj">
+      <Project>{5D3BDF17-49BC-3F84-92CC-FFA52EF34528}</Project>
+      <Name>input_common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D5C6C90F-3BB7-3956-B2D0-7C8B44B86B9C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>dynarmic</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\citraw\externals\dynarmic\src\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">dynarmic.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">dynarmic</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\citraw\externals\dynarmic\src\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">dynarmic.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">dynarmic</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\citra\externals\dynarmic\src\..\include;C:\citra\externals\dynarmic\src\.;C:\citra\externals\boost;C:\citra\externals\fmt;C:\citra\externals\.\xbyak\xbyak;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zo /permissive- /Zc:throwingNew,inline /w34263 /w44265 /w34456 /w34457 /w34458 /w34459 /w34946 /permissive- /Zo /Zc:throwingNew</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4592</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>NOMINMAX;FMT_USE_WINDOWS_H=0;ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;SINGLETHREADED;_DEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;XBYAK_NO_OP_NAMES;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;NOMINMAX;FMT_USE_WINDOWS_H=0;ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;SINGLETHREADED;_WIN32_WINNT=0x0600;WINVER=0x0600;XBYAK_NO_OP_NAMES;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\citra\externals\dynarmic\src\..\include;C:\citra\externals\dynarmic\src\.;C:\citra\externals\boost;C:\citra\externals\fmt;C:\citra\externals\.\xbyak\xbyak;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>NOMINMAX;FMT_USE_WINDOWS_H=0;ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;SINGLETHREADED;_DEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;XBYAK_NO_OP_NAMES;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\citra\externals\dynarmic\src\..\include;C:\citra\externals\dynarmic\src\.;C:\citra\externals\boost;C:\citra\externals\fmt;C:\citra\externals\.\xbyak\xbyak;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\citra\externals\dynarmic\src\..\include;C:\citra\externals\dynarmic\src\.;C:\citra\externals\boost;C:\citra\externals\fmt;C:\citra\externals\.\xbyak\xbyak;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\citra\externals\dynarmic\src\..\include;C:\citra\externals\dynarmic\src\.;C:\citra\externals\boost;C:\citra\externals\fmt;C:\citra\externals\.\xbyak\xbyak;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zo /permissive- /Zc:throwingNew,inline /w34263 /w44265 /w34456 /w34457 /w34458 /w34459 /w34946 /permissive- /Zo /Zc:throwingNew</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4592</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>NOMINMAX;FMT_USE_WINDOWS_H=0;ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;SINGLETHREADED;NDEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;XBYAK_NO_OP_NAMES;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NOMINMAX;FMT_USE_WINDOWS_H=0;ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;SINGLETHREADED;NDEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;XBYAK_NO_OP_NAMES;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\citra\externals\dynarmic\src\..\include;C:\citra\externals\dynarmic\src\.;C:\citra\externals\boost;C:\citra\externals\fmt;C:\citra\externals\.\xbyak\xbyak;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>NOMINMAX;FMT_USE_WINDOWS_H=0;ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;SINGLETHREADED;NDEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;XBYAK_NO_OP_NAMES;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\citra\externals\dynarmic\src\..\include;C:\citra\externals\dynarmic\src\.;C:\citra\externals\boost;C:\citra\externals\fmt;C:\citra\externals\.\xbyak\xbyak;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\citra\externals\dynarmic\src\..\include;C:\citra\externals\dynarmic\src\.;C:\citra\externals\boost;C:\citra\externals\fmt;C:\citra\externals\.\xbyak\xbyak;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\externals\dynarmic\src\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/citra/externals/dynarmic/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/citra -BC:/citraw --check-stamp-file C:/citraw/externals/dynarmic/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/citra/externals/dynarmic/src/CMakeLists.txt;C:\citra\externals\dynarmic\src\CMakeLists.txt;C:\citra\externals\dynarmic\CMakeModules\CreateDirectoryGroups.cmake;C:\citra\externals\dynarmic\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\citraw\externals\dynarmic\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/citra/externals/dynarmic/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/citra -BC:/citraw --check-stamp-file C:/citraw/externals/dynarmic/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/citra/externals/dynarmic/src/CMakeLists.txt;C:\citra\externals\dynarmic\src\CMakeLists.txt;C:\citra\externals\dynarmic\CMakeModules\CreateDirectoryGroups.cmake;C:\citra\externals\dynarmic\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\citraw\externals\dynarmic\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\citra\externals\dynarmic\src\common\memory_pool.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\arm\types.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\disassembler\disassembler_arm.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\disassembler\disassembler_thumb.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\ir\basic_block.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\ir\ir_emitter.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\ir\location_descriptor.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\ir\microinstruction.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\ir\opcodes.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\ir\value.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\branch.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\coprocessor.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\data_processing.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\exception_generating.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\extension.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\load_store.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\misc.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\multiply.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\packing.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\parallel.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\reversal.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\saturated.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\status_register_access.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\synchronization.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\vfp2.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_thumb.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\ir_opt\constant_propagation_pass.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\ir_opt\dead_code_elimination_pass.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\ir_opt\get_set_elimination_pass.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\ir_opt\verification_pass.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\backend_x64\abi.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\backend_x64\block_of_code.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\backend_x64\constant_pool.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\backend_x64\emit_x64.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\backend_x64\hostloc.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\backend_x64\interface_x64.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\backend_x64\jitstate.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\backend_x64\reg_alloc.cpp"  />
+    <ClCompile Include="C:\citra\externals\dynarmic\src\backend_x64\exception_handler_windows.cpp"  />
+    <ClInclude Include="C:\citra\externals\dynarmic\include\dynarmic\callbacks.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\include\dynarmic\coprocessor.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\include\dynarmic\coprocessor_util.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\include\dynarmic\disassembler.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\include\dynarmic\dynarmic.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\common\address_range.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\common\assert.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\common\bit_util.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\common\common_types.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\common\intrusive_list.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\common\iterator_util.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\common\memory_pool.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\common\mp.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\common\scope_exit.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\common\string_util.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\common\variant_util.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\arm\FPSCR.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\arm\PSR.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\arm\types.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\decoder\arm.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\decoder\decoder_detail.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\decoder\matcher.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\decoder\thumb16.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\decoder\thumb32.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\decoder\vfp2.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\disassembler\disassembler.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\ir\basic_block.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\ir\ir_emitter.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\ir\location_descriptor.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\ir\microinstruction.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\ir\opcodes.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\ir\terminal.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\ir\value.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\translate\translate.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\frontend\translate\translate_arm\translate_arm.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\ir_opt\passes.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\backend_x64\abi.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\backend_x64\block_of_code.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\backend_x64\constant_pool.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\backend_x64\emit_x64.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\backend_x64\hostloc.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\backend_x64\jitstate.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\backend_x64\oparg.h" />
+    <ClInclude Include="C:\citra\externals\dynarmic\src\backend_x64\reg_alloc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\citraw\ZERO_CHECK.vcxproj">
+      <Project>{FF076AC6-6A21-3253-9CEB-BE630C8EB4D3}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\externals\fmt\fmt\fmt.vcxproj">
+      <Project>{782B3F9B-ED7B-377B-8EB4-490464915939}</Project>
+      <Name>fmt</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

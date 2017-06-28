@@ -1,0 +1,3 @@
+# CMake generation dependency list for this directory.
+C:/citra/externals/dynarmic/src/CMakeLists.txt
+C:/citra/externals/dynarmic/CMakeModules/CreateDirectoryGroups.cmake

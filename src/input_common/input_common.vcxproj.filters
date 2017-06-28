@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\citra\src\input_common\analog_from_button.cpp" />
+    <ClCompile Include="C:\citra\src\input_common\keyboard.cpp" />
+    <ClCompile Include="C:\citra\src\input_common\main.cpp" />
+    <ClCompile Include="C:\citra\src\input_common\sdl\sdl.cpp">
+      <Filter>sdl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\citra\src\input_common\analog_from_button.h" />
+    <ClInclude Include="C:\citra\src\input_common\keyboard.h" />
+    <ClInclude Include="C:\citra\src\input_common\main.h" />
+    <ClInclude Include="C:\citra\src\input_common\sdl\sdl.h">
+      <Filter>sdl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\src\input_common\CMakeLists.txt">
+      <Filter>Other Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Other Files">
+      <UniqueIdentifier>{66AF7118-DDE2-31CE-A021-3D952A98F1CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdl">
+      <UniqueIdentifier>{64D0F311-7A40-3182-88E2-7668995E4256}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

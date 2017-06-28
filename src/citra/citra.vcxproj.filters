@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\citra\src\citra\emu_window\emu_window_sdl2.cpp">
+      <Filter>emu_window</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\citra\citra.cpp" />
+    <ClCompile Include="C:\citra\src\citra\config.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\citra\src\citra\emu_window\emu_window_sdl2.h">
+      <Filter>emu_window</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\citra\config.h" />
+    <ClInclude Include="C:\citra\src\citra\default_ini.h" />
+    <ClInclude Include="C:\citra\src\citra\resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\src\citra\CMakeLists.txt">
+      <Filter>Other Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\citra\src\citra\citra.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Other Files">
+      <UniqueIdentifier>{66AF7118-DDE2-31CE-A021-3D952A98F1CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="emu_window">
+      <UniqueIdentifier>{E7189256-7249-3BD1-B397-3BD8E13563BC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

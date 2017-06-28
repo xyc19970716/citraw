@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/citra/externals/dynarmic/CMakeLists.txt
+C:/citra/externals/dynarmic/CMakeModules/DetectArchitecture.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/FindBoost.cmake

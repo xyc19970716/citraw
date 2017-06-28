@@ -1,0 +1,550 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4E61BBE8-FF8F-36D2-8183-E4632D73075D}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>core</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\citraw\src\core\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">core.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">core</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\citraw\src\core\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">core.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">core</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\citra\src\.;C:\citra\externals\boost;C:\citra\externals\.\microprofile;C:\citra\externals\cryptopp\.;C:\citra\externals\dynarmic\src\..\include;C:\citra\externals\fmt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zo /permissive- /Zc:throwingNew,inline</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;SINGLETHREADED;_DEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;SINGLETHREADED;_WIN32_WINNT=0x0600;WINVER=0x0600;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\citra\src\.;C:\citra\externals\boost;C:\citra\externals\.\microprofile;C:\citra\externals\cryptopp\.;C:\citra\externals\dynarmic\src\..\include;C:\citra\externals\fmt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;SINGLETHREADED;_DEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\citra\src\.;C:\citra\externals\boost;C:\citra\externals\.\microprofile;C:\citra\externals\cryptopp\.;C:\citra\externals\dynarmic\src\..\include;C:\citra\externals\fmt;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\citra\src\.;C:\citra\externals\boost;C:\citra\externals\.\microprofile;C:\citra\externals\cryptopp\.;C:\citra\externals\dynarmic\src\..\include;C:\citra\externals\fmt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\citra\src\.;C:\citra\externals\boost;C:\citra\externals\.\microprofile;C:\citra\externals\cryptopp\.;C:\citra\externals\dynarmic\src\..\include;C:\citra\externals\fmt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zo /permissive- /Zc:throwingNew,inline</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;SINGLETHREADED;NDEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;SINGLETHREADED;NDEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\citra\src\.;C:\citra\externals\boost;C:\citra\externals\.\microprofile;C:\citra\externals\cryptopp\.;C:\citra\externals\dynarmic\src\..\include;C:\citra\externals\fmt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>ARCHITECTURE_x86_64=1;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;SINGLETHREADED;NDEBUG;_WIN32_WINNT=0x0600;WINVER=0x0600;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>C:\citra\src\.;C:\citra\externals\boost;C:\citra\externals\.\microprofile;C:\citra\externals\cryptopp\.;C:\citra\externals\dynarmic\src\..\include;C:\citra\externals\fmt;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\citra\src\.;C:\citra\externals\boost;C:\citra\externals\.\microprofile;C:\citra\externals\cryptopp\.;C:\citra\externals\dynarmic\src\..\include;C:\citra\externals\fmt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\src\core\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/citra/src/core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/citra -BC:/citraw --check-stamp-file C:/citraw/src/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/citra/src/core/CMakeLists.txt;C:\citra\src\core\CMakeLists.txt;C:\citra\src\core\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\citraw\src\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/citra/src/core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/citra -BC:/citraw --check-stamp-file C:/citraw/src/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/citra/src/core/CMakeLists.txt;C:\citra\src\core\CMakeLists.txt;C:\citra\src\core\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\citraw\src\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\citra\src\core\arm\dynarmic\arm_dynarmic.cpp"  />
+    <ClCompile Include="C:\citra\src\core\arm\dynarmic\arm_dynarmic_cp15.cpp"  />
+    <ClCompile Include="C:\citra\src\core\arm\dyncom\arm_dyncom.cpp"  />
+    <ClCompile Include="C:\citra\src\core\arm\dyncom\arm_dyncom_dec.cpp"  />
+    <ClCompile Include="C:\citra\src\core\arm\dyncom\arm_dyncom_interpreter.cpp"  />
+    <ClCompile Include="C:\citra\src\core\arm\dyncom\arm_dyncom_thumb.cpp"  />
+    <ClCompile Include="C:\citra\src\core\arm\dyncom\arm_dyncom_trans.cpp"  />
+    <ClCompile Include="C:\citra\src\core\arm\skyeye_common\armstate.cpp"  />
+    <ClCompile Include="C:\citra\src\core\arm\skyeye_common\armsupp.cpp"  />
+    <ClCompile Include="C:\citra\src\core\arm\skyeye_common\vfp\vfp.cpp"  />
+    <ClCompile Include="C:\citra\src\core\arm\skyeye_common\vfp\vfpdouble.cpp"  />
+    <ClCompile Include="C:\citra\src\core\arm\skyeye_common\vfp\vfpinstr.cpp"  />
+    <ClCompile Include="C:\citra\src\core\arm\skyeye_common\vfp\vfpsingle.cpp"  />
+    <ClCompile Include="C:\citra\src\core\core.cpp"  />
+    <ClCompile Include="C:\citra\src\core\core_timing.cpp"  />
+    <ClCompile Include="C:\citra\src\core\file_sys\archive_backend.cpp"  />
+    <ClCompile Include="C:\citra\src\core\file_sys\archive_extsavedata.cpp"  />
+    <ClCompile Include="C:\citra\src\core\file_sys\archive_ncch.cpp"  />
+    <ClCompile Include="C:\citra\src\core\file_sys\archive_other_savedata.cpp"  />
+    <ClCompile Include="C:\citra\src\core\file_sys\archive_savedata.cpp"  />
+    <ClCompile Include="C:\citra\src\core\file_sys\archive_sdmc.cpp"  />
+    <ClCompile Include="C:\citra\src\core\file_sys\archive_sdmcwriteonly.cpp"  />
+    <ClCompile Include="C:\citra\src\core\file_sys\archive_selfncch.cpp"  />
+    <ClCompile Include="C:\citra\src\core\file_sys\archive_source_sd_savedata.cpp"  />
+    <ClCompile Include="C:\citra\src\core\file_sys\archive_systemsavedata.cpp"  />
+    <ClCompile Include="C:\citra\src\core\file_sys\disk_archive.cpp"  />
+    <ClCompile Include="C:\citra\src\core\file_sys\ivfc_archive.cpp"  />
+    <ClCompile Include="C:\citra\src\core\file_sys\path_parser.cpp"  />
+    <ClCompile Include="C:\citra\src\core\file_sys\savedata_archive.cpp"  />
+    <ClCompile Include="C:\citra\src\core\frontend\camera\blank_camera.cpp"  />
+    <ClCompile Include="C:\citra\src\core\frontend\camera\factory.cpp"  />
+    <ClCompile Include="C:\citra\src\core\frontend\camera\interface.cpp"  />
+    <ClCompile Include="C:\citra\src\core\frontend\emu_window.cpp"  />
+    <ClCompile Include="C:\citra\src\core\frontend\framebuffer_layout.cpp"  />
+    <ClCompile Include="C:\citra\src\core\frontend\motion_emu.cpp"  />
+    <ClCompile Include="C:\citra\src\core\gdbstub\gdbstub.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\config_mem.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\applets\applet.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\applets\erreula.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\applets\mii_selector.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\applets\mint.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\applets\swkbd.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\kernel\address_arbiter.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\kernel\client_port.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\kernel\client_session.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\kernel\event.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\kernel\handle_table.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\kernel\hle_ipc.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\kernel\kernel.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\kernel\memory.cpp" >
+      <ObjectFileName>$(IntDir)/hle/kernel/memory.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\hle\kernel\mutex.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\kernel\process.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\kernel\resource_limit.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\kernel\semaphore.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\kernel\server_port.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\kernel\server_session.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\kernel\shared_memory.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\kernel\thread.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\kernel\timer.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\kernel\vm_manager.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\kernel\wait_object.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\ac\ac.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\ac\ac_i.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\ac\ac_u.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\act\act.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\act\act_a.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\act\act_u.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\am\am.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\am\am_app.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\am\am_net.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\am\am_sys.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\am\am_u.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\apt\apt.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\apt\apt_a.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\apt\apt_s.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\apt\apt_u.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\apt\bcfnt\bcfnt.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\boss\boss.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\boss\boss_p.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\boss\boss_u.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\cam\cam.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\cam\cam_c.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\cam\cam_q.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\cam\cam_s.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\cam\cam_u.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\cecd\cecd.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\cecd\cecd_ndm.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\cecd\cecd_s.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\cecd\cecd_u.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\cfg\cfg.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\cfg\cfg_i.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\cfg\cfg_nor.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\cfg\cfg_s.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\cfg\cfg_u.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\csnd_snd.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\dlp\dlp.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\dlp\dlp_clnt.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\dlp\dlp_fkcl.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\dlp\dlp_srvr.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\dsp_dsp.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\err_f.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\frd\frd.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\frd\frd_a.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\frd\frd_u.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\fs\archive.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\fs\fs_user.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\gsp_gpu.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\gsp_lcd.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\hid\hid.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\hid\hid_spvr.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\hid\hid_user.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\http_c.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\ir\extra_hid.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\ir\ir.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\ir\ir_rst.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\ir\ir_u.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\ir\ir_user.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\ldr_ro\cro_helper.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\ldr_ro\ldr_ro.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\ldr_ro\memory_synchronizer.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\mic_u.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\mvd\mvd.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\mvd\mvd_std.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\ndm\ndm.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\ndm\ndm_u.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\nfc\nfc.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\nfc\nfc_m.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\nfc\nfc_u.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\news\news.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\news\news_s.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\news\news_u.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\nim\nim.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\nim\nim_aoc.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\nim\nim_s.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\nim\nim_u.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\ns_s.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\nwm\nwm.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\nwm\nwm_cec.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\nwm\nwm_ext.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\nwm\nwm_inf.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\nwm\nwm_sap.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\nwm\nwm_soc.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\nwm\nwm_tst.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\nwm\nwm_uds.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\nwm\uds_beacon.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\nwm\uds_data.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\pm_app.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\ptm\ptm.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\ptm\ptm_gets.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\ptm\ptm_play.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\ptm\ptm_sets.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\ptm\ptm_sysm.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\ptm\ptm_u.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\qtm\qtm.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\qtm\qtm_s.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\qtm\qtm_sp.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\qtm\qtm_u.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\service.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\sm\sm.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\sm\srv.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\soc_u.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\ssl_c.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\service\y2r_u.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\shared_page.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hle\svc.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hw\aes\arithmetic128.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hw\aes\ccm.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hw\aes\key.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hw\gpu.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hw\hw.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hw\lcd.cpp"  />
+    <ClCompile Include="C:\citra\src\core\hw\y2r.cpp"  />
+    <ClCompile Include="C:\citra\src\core\loader\3dsx.cpp"  />
+    <ClCompile Include="C:\citra\src\core\loader\elf.cpp"  />
+    <ClCompile Include="C:\citra\src\core\loader\loader.cpp"  />
+    <ClCompile Include="C:\citra\src\core\loader\ncch.cpp"  />
+    <ClCompile Include="C:\citra\src\core\loader\smdh.cpp"  />
+    <ClCompile Include="C:\citra\src\core\tracer\recorder.cpp"  />
+    <ClCompile Include="C:\citra\src\core\memory.cpp" >
+      <ObjectFileName>$(IntDir)/memory.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\core\perf_stats.cpp"  />
+    <ClCompile Include="C:\citra\src\core\settings.cpp"  />
+    <ClCompile Include="C:\citra\src\core\telemetry_session.cpp"  />
+    <ClInclude Include="C:\citra\src\core\3ds.h" />
+    <ClInclude Include="C:\citra\src\core\arm\arm_interface.h" />
+    <ClInclude Include="C:\citra\src\core\arm\dynarmic\arm_dynarmic.h" />
+    <ClInclude Include="C:\citra\src\core\arm\dynarmic\arm_dynarmic_cp15.h" />
+    <ClInclude Include="C:\citra\src\core\arm\dyncom\arm_dyncom.h" />
+    <ClInclude Include="C:\citra\src\core\arm\dyncom\arm_dyncom_dec.h" />
+    <ClInclude Include="C:\citra\src\core\arm\dyncom\arm_dyncom_interpreter.h" />
+    <ClInclude Include="C:\citra\src\core\arm\dyncom\arm_dyncom_run.h" />
+    <ClInclude Include="C:\citra\src\core\arm\dyncom\arm_dyncom_thumb.h" />
+    <ClInclude Include="C:\citra\src\core\arm\dyncom\arm_dyncom_trans.h" />
+    <ClInclude Include="C:\citra\src\core\arm\skyeye_common\arm_regformat.h" />
+    <ClInclude Include="C:\citra\src\core\arm\skyeye_common\armstate.h" />
+    <ClInclude Include="C:\citra\src\core\arm\skyeye_common\armsupp.h" />
+    <ClInclude Include="C:\citra\src\core\arm\skyeye_common\vfp\asm_vfp.h" />
+    <ClInclude Include="C:\citra\src\core\arm\skyeye_common\vfp\vfp.h" />
+    <ClInclude Include="C:\citra\src\core\arm\skyeye_common\vfp\vfp_helper.h" />
+    <ClInclude Include="C:\citra\src\core\core.h" />
+    <ClInclude Include="C:\citra\src\core\core_timing.h" />
+    <ClInclude Include="C:\citra\src\core\file_sys\archive_backend.h" />
+    <ClInclude Include="C:\citra\src\core\file_sys\archive_extsavedata.h" />
+    <ClInclude Include="C:\citra\src\core\file_sys\archive_ncch.h" />
+    <ClInclude Include="C:\citra\src\core\file_sys\archive_other_savedata.h" />
+    <ClInclude Include="C:\citra\src\core\file_sys\archive_savedata.h" />
+    <ClInclude Include="C:\citra\src\core\file_sys\archive_sdmc.h" />
+    <ClInclude Include="C:\citra\src\core\file_sys\archive_sdmcwriteonly.h" />
+    <ClInclude Include="C:\citra\src\core\file_sys\archive_selfncch.h" />
+    <ClInclude Include="C:\citra\src\core\file_sys\archive_source_sd_savedata.h" />
+    <ClInclude Include="C:\citra\src\core\file_sys\archive_systemsavedata.h" />
+    <ClInclude Include="C:\citra\src\core\file_sys\directory_backend.h" />
+    <ClInclude Include="C:\citra\src\core\file_sys\disk_archive.h" />
+    <ClInclude Include="C:\citra\src\core\file_sys\errors.h" />
+    <ClInclude Include="C:\citra\src\core\file_sys\file_backend.h" />
+    <ClInclude Include="C:\citra\src\core\file_sys\ivfc_archive.h" />
+    <ClInclude Include="C:\citra\src\core\file_sys\path_parser.h" />
+    <ClInclude Include="C:\citra\src\core\file_sys\savedata_archive.h" />
+    <ClInclude Include="C:\citra\src\core\frontend\camera\blank_camera.h" />
+    <ClInclude Include="C:\citra\src\core\frontend\camera\factory.h" />
+    <ClInclude Include="C:\citra\src\core\frontend\camera\interface.h" />
+    <ClInclude Include="C:\citra\src\core\frontend\emu_window.h" />
+    <ClInclude Include="C:\citra\src\core\frontend\framebuffer_layout.h" />
+    <ClInclude Include="C:\citra\src\core\frontend\input.h" />
+    <ClInclude Include="C:\citra\src\core\frontend\motion_emu.h" />
+    <ClInclude Include="C:\citra\src\core\gdbstub\gdbstub.h" />
+    <ClInclude Include="C:\citra\src\core\hle\config_mem.h" />
+    <ClInclude Include="C:\citra\src\core\hle\function_wrappers.h" />
+    <ClInclude Include="C:\citra\src\core\hle\ipc.h" />
+    <ClInclude Include="C:\citra\src\core\hle\ipc_helpers.h" />
+    <ClInclude Include="C:\citra\src\core\hle\applets\applet.h" />
+    <ClInclude Include="C:\citra\src\core\hle\applets\erreula.h" />
+    <ClInclude Include="C:\citra\src\core\hle\applets\mii_selector.h" />
+    <ClInclude Include="C:\citra\src\core\hle\applets\mint.h" />
+    <ClInclude Include="C:\citra\src\core\hle\applets\swkbd.h" />
+    <ClInclude Include="C:\citra\src\core\hle\kernel\address_arbiter.h" />
+    <ClInclude Include="C:\citra\src\core\hle\kernel\client_port.h" />
+    <ClInclude Include="C:\citra\src\core\hle\kernel\client_session.h" />
+    <ClInclude Include="C:\citra\src\core\hle\kernel\errors.h" />
+    <ClInclude Include="C:\citra\src\core\hle\kernel\event.h" />
+    <ClInclude Include="C:\citra\src\core\hle\kernel\handle_table.h" />
+    <ClInclude Include="C:\citra\src\core\hle\kernel\hle_ipc.h" />
+    <ClInclude Include="C:\citra\src\core\hle\kernel\kernel.h" />
+    <ClInclude Include="C:\citra\src\core\hle\kernel\memory.h" />
+    <ClInclude Include="C:\citra\src\core\hle\kernel\mutex.h" />
+    <ClInclude Include="C:\citra\src\core\hle\kernel\process.h" />
+    <ClInclude Include="C:\citra\src\core\hle\kernel\resource_limit.h" />
+    <ClInclude Include="C:\citra\src\core\hle\kernel\semaphore.h" />
+    <ClInclude Include="C:\citra\src\core\hle\kernel\server_port.h" />
+    <ClInclude Include="C:\citra\src\core\hle\kernel\server_session.h" />
+    <ClInclude Include="C:\citra\src\core\hle\kernel\session.h" />
+    <ClInclude Include="C:\citra\src\core\hle\kernel\shared_memory.h" />
+    <ClInclude Include="C:\citra\src\core\hle\kernel\thread.h" />
+    <ClInclude Include="C:\citra\src\core\hle\kernel\timer.h" />
+    <ClInclude Include="C:\citra\src\core\hle\kernel\vm_manager.h" />
+    <ClInclude Include="C:\citra\src\core\hle\kernel\wait_object.h" />
+    <ClInclude Include="C:\citra\src\core\hle\result.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\ac\ac.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\ac\ac_i.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\ac\ac_u.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\act\act.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\act\act_a.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\act\act_u.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\am\am.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\am\am_app.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\am\am_net.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\am\am_sys.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\am\am_u.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\apt\apt.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\apt\apt_a.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\apt\apt_s.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\apt\apt_u.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\apt\bcfnt\bcfnt.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\boss\boss.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\boss\boss_p.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\boss\boss_u.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\cam\cam.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\cam\cam_c.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\cam\cam_q.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\cam\cam_s.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\cam\cam_u.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\cecd\cecd.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\cecd\cecd_ndm.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\cecd\cecd_s.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\cecd\cecd_u.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\cfg\cfg.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\cfg\cfg_i.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\cfg\cfg_nor.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\cfg\cfg_s.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\cfg\cfg_u.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\csnd_snd.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\dlp\dlp.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\dlp\dlp_clnt.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\dlp\dlp_fkcl.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\dlp\dlp_srvr.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\dsp_dsp.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\err_f.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\frd\frd.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\frd\frd_a.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\frd\frd_u.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\fs\archive.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\fs\fs_user.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\gsp_gpu.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\gsp_lcd.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\hid\hid.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\hid\hid_spvr.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\hid\hid_user.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\http_c.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\ir\extra_hid.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\ir\ir.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\ir\ir_rst.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\ir\ir_u.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\ir\ir_user.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\ldr_ro\cro_helper.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\ldr_ro\ldr_ro.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\ldr_ro\memory_synchronizer.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\mic_u.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\mvd\mvd.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\mvd\mvd_std.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\ndm\ndm.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\ndm\ndm_u.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\nfc\nfc.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\nfc\nfc_m.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\nfc\nfc_u.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\news\news.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\news\news_s.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\news\news_u.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\nim\nim.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\nim\nim_aoc.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\nim\nim_s.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\nim\nim_u.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\ns_s.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\nwm\nwm.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\nwm\nwm_cec.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\nwm\nwm_ext.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\nwm\nwm_inf.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\nwm\nwm_sap.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\nwm\nwm_soc.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\nwm\nwm_tst.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\nwm\nwm_uds.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\nwm\uds_beacon.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\nwm\uds_data.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\pm_app.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\ptm\ptm.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\ptm\ptm_gets.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\ptm\ptm_play.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\ptm\ptm_sets.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\ptm\ptm_sysm.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\ptm\ptm_u.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\qtm\qtm.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\qtm\qtm_s.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\qtm\qtm_sp.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\qtm\qtm_u.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\service.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\sm\sm.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\sm\srv.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\soc_u.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\ssl_c.h" />
+    <ClInclude Include="C:\citra\src\core\hle\service\y2r_u.h" />
+    <ClInclude Include="C:\citra\src\core\hle\shared_page.h" />
+    <ClInclude Include="C:\citra\src\core\hle\svc.h" />
+    <ClInclude Include="C:\citra\src\core\hw\aes\arithmetic128.h" />
+    <ClInclude Include="C:\citra\src\core\hw\aes\ccm.h" />
+    <ClInclude Include="C:\citra\src\core\hw\aes\key.h" />
+    <ClInclude Include="C:\citra\src\core\hw\gpu.h" />
+    <ClInclude Include="C:\citra\src\core\hw\hw.h" />
+    <ClInclude Include="C:\citra\src\core\hw\lcd.h" />
+    <ClInclude Include="C:\citra\src\core\hw\y2r.h" />
+    <ClInclude Include="C:\citra\src\core\loader\3dsx.h" />
+    <ClInclude Include="C:\citra\src\core\loader\elf.h" />
+    <ClInclude Include="C:\citra\src\core\loader\loader.h" />
+    <ClInclude Include="C:\citra\src\core\loader\ncch.h" />
+    <ClInclude Include="C:\citra\src\core\loader\smdh.h" />
+    <ClInclude Include="C:\citra\src\core\tracer\recorder.h" />
+    <ClInclude Include="C:\citra\src\core\tracer\citrace.h" />
+    <ClInclude Include="C:\citra\src\core\memory.h" />
+    <ClInclude Include="C:\citra\src\core\memory_setup.h" />
+    <ClInclude Include="C:\citra\src\core\mmio.h" />
+    <ClInclude Include="C:\citra\src\core\perf_stats.h" />
+    <ClInclude Include="C:\citra\src\core\settings.h" />
+    <ClInclude Include="C:\citra\src\core\telemetry_session.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\citraw\src\video_core\video_core.vcxproj">
+      <Project>{8DB16193-26A0-3D64-8195-79C04AB3DE43}</Project>
+      <Name>video_core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\citra\src\tests\common\param_package.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\tests\core\file_sys\path_parser.cpp">
+      <Filter>core\file_sys</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\tests\core\hle\kernel\hle_ipc.cpp">
+      <Filter>core\hle\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\tests\glad.cpp" />
+    <ClCompile Include="C:\citra\src\tests\tests.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\src\tests\CMakeLists.txt">
+      <Filter>Other Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="core\file_sys">
+      <UniqueIdentifier>{91399483-E07E-329E-9503-351A7DA57A37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\hle">
+      <UniqueIdentifier>{6B6F7608-0B04-3527-A207-4B5523C819A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\hle\kernel">
+      <UniqueIdentifier>{8AB18A00-AF46-3958-80C8-43B57A6B9DFA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Other Files">
+      <UniqueIdentifier>{66AF7118-DDE2-31CE-A021-3D952A98F1CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{7A6A2B16-F0D6-3CD4-80E9-E8D134ED882B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{5E07CF32-1753-38EB-80A8-69BF50BF3E57}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

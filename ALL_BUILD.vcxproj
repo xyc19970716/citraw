@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2B8FDAD8-BB75-36D9-9396-BE3A2923B4F8}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/citra/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/citra -BC:/citraw --check-stamp-file C:/citraw/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/citra/CMakeLists.txt;C:\citra\CMakeLists.txt;C:\citraw\CMakeFiles\3.9.0-rc4\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;C:\citraw\CMakeFiles\3.9.0-rc4\CMakeCCompiler.cmake;C:\citraw\CMakeFiles\3.9.0-rc4\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;C:\citraw\CMakeFiles\3.9.0-rc4\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPNG.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5\Qt5Config.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeParseArguments.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QDDSPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeParseArguments.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\citra\externals\cmake-modules\GetGitRevisionDescription.cmake;C:\citra\.git\HEAD;C:\citra\externals\cmake-modules\GetGitRevisionDescription.cmake.in;C:\citraw\CMakeFiles\git-data\grabRef.cmake;C:\citra\.git\refs\heads\master;C:\Program Files\CMake\share\cmake-3.9\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\citra\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\citraw\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/citra/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/citra -BC:/citraw --check-stamp-file C:/citraw/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/citra/CMakeLists.txt;C:\citra\CMakeLists.txt;C:\citraw\CMakeFiles\3.9.0-rc4\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;C:\citraw\CMakeFiles\3.9.0-rc4\CMakeCCompiler.cmake;C:\citraw\CMakeFiles\3.9.0-rc4\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;C:\citraw\CMakeFiles\3.9.0-rc4\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPNG.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5\Qt5Config.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeParseArguments.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QDDSPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeParseArguments.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\citraw\externals\qt-5.7-msvc2015_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\citra\externals\cmake-modules\GetGitRevisionDescription.cmake;C:\citra\.git\HEAD;C:\citra\externals\cmake-modules\GetGitRevisionDescription.cmake.in;C:\citraw\CMakeFiles\git-data\grabRef.cmake;C:\citra\.git\refs\heads\master;C:\Program Files\CMake\share\cmake-3.9\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\citra\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\citraw\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\citraw\ZERO_CHECK.vcxproj">
+      <Project>{FF076AC6-6A21-3253-9CEB-BE630C8EB4D3}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\externals\soundtouch\SoundTouch.vcxproj">
+      <Project>{4C90B5C6-BD21-3CEE-9D10-A23D44AD6EA8}</Project>
+      <Name>SoundTouch</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\src\citra\citra.vcxproj">
+      <Project>{8159E197-3634-3AC0-9B0B-BE2D6FEE7D0B}</Project>
+      <Name>citra</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\src\citra_qt\citra-qt.vcxproj">
+      <Project>{27694D1B-0429-360A-9707-64F884738010}</Project>
+      <Name>citra-qt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\src\common\common.vcxproj">
+      <Project>{33DD0332-7FF6-3AF2-8257-F503CDEC4742}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\src\core\core.vcxproj">
+      <Project>{4E61BBE8-FF8F-36D2-8183-E4632D73075D}</Project>
+      <Name>core</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\externals\cryptopp\cryptopp.vcxproj">
+      <Project>{9C3A2B53-4C91-38E7-A2FE-BA679B371489}</Project>
+      <Name>cryptopp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\externals\dynarmic\src\dynarmic.vcxproj">
+      <Project>{D5C6C90F-3BB7-3956-B2D0-7C8B44B86B9C}</Project>
+      <Name>dynarmic</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\externals\fmt\fmt\fmt.vcxproj">
+      <Project>{782B3F9B-ED7B-377B-8EB4-490464915939}</Project>
+      <Name>fmt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\externals\getopt\getopt.vcxproj">
+      <Project>{08FA151D-98FD-3811-BCE7-DD21BCA79561}</Project>
+      <Name>getopt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\externals\glad\glad.vcxproj">
+      <Project>{1F68E14B-4832-35B3-8D6A-9A8C3470D0E7}</Project>
+      <Name>glad</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\externals\inih\inih.vcxproj">
+      <Project>{6F54CDA6-BAAB-3642-A595-AB5302D48E1B}</Project>
+      <Name>inih</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\src\input_common\input_common.vcxproj">
+      <Project>{5D3BDF17-49BC-3F84-92CC-FFA52EF34528}</Project>
+      <Name>input_common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\citraw\src\tests\tests.vcxproj">
+      <Project>{BF1A78B8-6379-37D2-B6C5-D9911EE56BA2}</Project>
+      <Name>tests</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

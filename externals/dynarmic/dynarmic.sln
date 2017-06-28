@@ -1,0 +1,56 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{2B8FDAD8-BB75-36D9-9396-BE3A2923B4F8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FF076AC6-6A21-3253-9CEB-BE630C8EB4D3} = {FF076AC6-6A21-3253-9CEB-BE630C8EB4D3}
+		{D5C6C90F-3BB7-3956-B2D0-7C8B44B86B9C} = {D5C6C90F-3BB7-3956-B2D0-7C8B44B86B9C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RUN_TESTS", "RUN_TESTS.vcxproj", "{9A32BBAB-975E-3289-8F2B-FB305107ABC4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FF076AC6-6A21-3253-9CEB-BE630C8EB4D3} = {FF076AC6-6A21-3253-9CEB-BE630C8EB4D3}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "..\..\\ZERO_CHECK.vcxproj", "{FF076AC6-6A21-3253-9CEB-BE630C8EB4D3}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dynarmic", "src\dynarmic.vcxproj", "{D5C6C90F-3BB7-3956-B2D0-7C8B44B86B9C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FF076AC6-6A21-3253-9CEB-BE630C8EB4D3} = {FF076AC6-6A21-3253-9CEB-BE630C8EB4D3}
+		{782B3F9B-ED7B-377B-8EB4-490464915939} = {782B3F9B-ED7B-377B-8EB4-490464915939}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fmt", "..\fmt\fmt\fmt.vcxproj", "{782B3F9B-ED7B-377B-8EB4-490464915939}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FF076AC6-6A21-3253-9CEB-BE630C8EB4D3} = {FF076AC6-6A21-3253-9CEB-BE630C8EB4D3}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B8FDAD8-BB75-36D9-9396-BE3A2923B4F8}.Debug|x64.ActiveCfg = Debug|x64
+		{2B8FDAD8-BB75-36D9-9396-BE3A2923B4F8}.Release|x64.ActiveCfg = Release|x64
+		{9A32BBAB-975E-3289-8F2B-FB305107ABC4}.Debug|x64.ActiveCfg = Debug|x64
+		{9A32BBAB-975E-3289-8F2B-FB305107ABC4}.Release|x64.ActiveCfg = Release|x64
+		{FF076AC6-6A21-3253-9CEB-BE630C8EB4D3}.Debug|x64.ActiveCfg = Debug|x64
+		{FF076AC6-6A21-3253-9CEB-BE630C8EB4D3}.Debug|x64.Build.0 = Debug|x64
+		{FF076AC6-6A21-3253-9CEB-BE630C8EB4D3}.Release|x64.ActiveCfg = Release|x64
+		{FF076AC6-6A21-3253-9CEB-BE630C8EB4D3}.Release|x64.Build.0 = Release|x64
+		{D5C6C90F-3BB7-3956-B2D0-7C8B44B86B9C}.Debug|x64.ActiveCfg = Debug|x64
+		{D5C6C90F-3BB7-3956-B2D0-7C8B44B86B9C}.Debug|x64.Build.0 = Debug|x64
+		{D5C6C90F-3BB7-3956-B2D0-7C8B44B86B9C}.Release|x64.ActiveCfg = Release|x64
+		{D5C6C90F-3BB7-3956-B2D0-7C8B44B86B9C}.Release|x64.Build.0 = Release|x64
+		{782B3F9B-ED7B-377B-8EB4-490464915939}.Debug|x64.ActiveCfg = Debug|x64
+		{782B3F9B-ED7B-377B-8EB4-490464915939}.Debug|x64.Build.0 = Debug|x64
+		{782B3F9B-ED7B-377B-8EB4-490464915939}.Release|x64.ActiveCfg = Release|x64
+		{782B3F9B-ED7B-377B-8EB4-490464915939}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\citra\src\common\break_points.cpp" />
+    <ClCompile Include="C:\citra\src\common\file_util.cpp" />
+    <ClCompile Include="C:\citra\src\common\hash.cpp" />
+    <ClCompile Include="C:\citra\src\common\logging\filter.cpp">
+      <Filter>logging</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\common\logging\text_formatter.cpp">
+      <Filter>logging</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\common\logging\backend.cpp">
+      <Filter>logging</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\citra\src\common\memory_util.cpp" />
+    <ClCompile Include="C:\citra\src\common\microprofile.cpp" />
+    <ClCompile Include="C:\citra\src\common\misc.cpp" />
+    <ClCompile Include="C:\citra\src\common\param_package.cpp" />
+    <ClCompile Include="C:\citra\src\common\scm_rev.cpp" />
+    <ClCompile Include="C:\citra\src\common\string_util.cpp" />
+    <ClCompile Include="C:\citra\src\common\telemetry.cpp" />
+    <ClCompile Include="C:\citra\src\common\thread.cpp" />
+    <ClCompile Include="C:\citra\src\common\timer.cpp" />
+    <ClCompile Include="C:\citra\src\common\x64\cpu_detect.cpp">
+      <Filter>x64</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\citra\src\common\alignment.h" />
+    <ClInclude Include="C:\citra\src\common\assert.h" />
+    <ClInclude Include="C:\citra\src\common\bit_field.h" />
+    <ClInclude Include="C:\citra\src\common\bit_set.h" />
+    <ClInclude Include="C:\citra\src\common\break_points.h" />
+    <ClInclude Include="C:\citra\src\common\chunk_file.h" />
+    <ClInclude Include="C:\citra\src\common\code_block.h" />
+    <ClInclude Include="C:\citra\src\common\color.h" />
+    <ClInclude Include="C:\citra\src\common\common_funcs.h" />
+    <ClInclude Include="C:\citra\src\common\common_paths.h" />
+    <ClInclude Include="C:\citra\src\common\common_types.h" />
+    <ClInclude Include="C:\citra\src\common\file_util.h" />
+    <ClInclude Include="C:\citra\src\common\hash.h" />
+    <ClInclude Include="C:\citra\src\common\linear_disk_cache.h" />
+    <ClInclude Include="C:\citra\src\common\logging\text_formatter.h">
+      <Filter>logging</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\common\logging\filter.h">
+      <Filter>logging</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\common\logging\log.h">
+      <Filter>logging</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\common\logging\backend.h">
+      <Filter>logging</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\common\math_util.h" />
+    <ClInclude Include="C:\citra\src\common\memory_util.h" />
+    <ClInclude Include="C:\citra\src\common\microprofile.h" />
+    <ClInclude Include="C:\citra\src\common\microprofileui.h" />
+    <ClInclude Include="C:\citra\src\common\param_package.h" />
+    <ClInclude Include="C:\citra\src\common\platform.h" />
+    <ClInclude Include="C:\citra\src\common\quaternion.h" />
+    <ClInclude Include="C:\citra\src\common\scm_rev.h" />
+    <ClInclude Include="C:\citra\src\common\scope_exit.h" />
+    <ClInclude Include="C:\citra\src\common\string_util.h" />
+    <ClInclude Include="C:\citra\src\common\swap.h" />
+    <ClInclude Include="C:\citra\src\common\synchronized_wrapper.h" />
+    <ClInclude Include="C:\citra\src\common\telemetry.h" />
+    <ClInclude Include="C:\citra\src\common\thread.h" />
+    <ClInclude Include="C:\citra\src\common\thread_queue_list.h" />
+    <ClInclude Include="C:\citra\src\common\timer.h" />
+    <ClInclude Include="C:\citra\src\common\vector_math.h" />
+    <ClInclude Include="C:\citra\src\common\x64\cpu_detect.h">
+      <Filter>x64</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\common\x64\xbyak_abi.h">
+      <Filter>x64</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\citra\src\common\x64\xbyak_util.h">
+      <Filter>x64</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\citra\src\common\CMakeLists.txt">
+      <Filter>Other Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Other Files">
+      <UniqueIdentifier>{66AF7118-DDE2-31CE-A021-3D952A98F1CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logging">
+      <UniqueIdentifier>{F99B4E43-394F-333B-8665-1DBB4AC35278}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="x64">
+      <UniqueIdentifier>{06FDE49B-35B5-3A0C-8CAF-38A2A7516A6D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

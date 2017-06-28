@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+C:/citra/src/citra_qt/CMakeLists.txt
+C:/citra/CMakeModules/CopyCitraQt5Deps.cmake
+C:/citra/CMakeModules/CopyCitraSDLDeps.cmake
+C:/citra/externals/cmake-modules/WindowsCopyFiles.cmake
+C:/citra/externals/cmake-modules/WindowsCopyFiles.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/AutogenInfo.cmake.in
